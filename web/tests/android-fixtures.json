@@ -1,0 +1,1242 @@
+[
+    {
+        "profile": {
+            "heightCm": 175,
+            "weightKg": 75.0,
+            "experience": "BEGINNER",
+            "daysPerWeek": 3,
+            "sessionMinutes": 60,
+            "splitPreference": "AUTO",
+            "goal": "HYPERTROPHY",
+            "equipment": [
+                "BODYWEIGHT",
+                "DUMBBELLS",
+                "BARBELL",
+                "BENCH",
+                "CABLE",
+                "MACHINE",
+                "PULL_UP_BAR",
+                "DIP_BARS",
+                "EZ_BAR"
+            ],
+            "priorityMuscles": [],
+            "maintenanceMuscles": [],
+            "painNotes": ""
+        },
+        "days": [
+            {
+                "minutes": 46,
+                "items": [
+                    {
+                        "id": "arnold-press",
+                        "sets": 2
+                    },
+                    {
+                        "id": "chest-supported-row",
+                        "sets": 3
+                    },
+                    {
+                        "id": "db-rdl",
+                        "sets": 3
+                    },
+                    {
+                        "id": "narrow-leg-press",
+                        "sets": 2
+                    },
+                    {
+                        "id": "push-up",
+                        "sets": 2
+                    },
+                    {
+                        "id": "calf-barbell",
+                        "sets": 2
+                    },
+                    {
+                        "id": "incline-hammer",
+                        "sets": 2
+                    },
+                    {
+                        "id": "overhead-extension",
+                        "sets": 3
+                    }
+                ]
+            },
+            {
+                "minutes": 44,
+                "items": [
+                    {
+                        "id": "decline-bench",
+                        "sets": 2
+                    },
+                    {
+                        "id": "leg-press",
+                        "sets": 3
+                    },
+                    {
+                        "id": "lying-tbar-row",
+                        "sets": 2
+                    },
+                    {
+                        "id": "ab-machine",
+                        "sets": 3
+                    },
+                    {
+                        "id": "calf-donkey",
+                        "sets": 3
+                    },
+                    {
+                        "id": "hammer-curl",
+                        "sets": 4
+                    },
+                    {
+                        "id": "low-cable-fly",
+                        "sets": 2
+                    }
+                ]
+            },
+            {
+                "minutes": 45,
+                "items": [
+                    {
+                        "id": "barbell-bench",
+                        "sets": 2
+                    },
+                    {
+                        "id": "cable-row",
+                        "sets": 3
+                    },
+                    {
+                        "id": "hack-squat",
+                        "sets": 3
+                    },
+                    {
+                        "id": "machine-shoulder",
+                        "sets": 2
+                    },
+                    {
+                        "id": "romanian-deadlift",
+                        "sets": 2
+                    },
+                    {
+                        "id": "pallof-press",
+                        "sets": 2
+                    },
+                    {
+                        "id": "sliding-leg-curl",
+                        "sets": 3
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "profile": {
+            "heightCm": 175,
+            "weightKg": 75.0,
+            "experience": "BEGINNER",
+            "daysPerWeek": 3,
+            "sessionMinutes": 30,
+            "splitPreference": "AUTO",
+            "goal": "HYPERTROPHY",
+            "equipment": [
+                "BODYWEIGHT",
+                "DUMBBELLS",
+                "BARBELL",
+                "BENCH",
+                "CABLE",
+                "MACHINE",
+                "PULL_UP_BAR",
+                "DIP_BARS",
+                "EZ_BAR"
+            ],
+            "priorityMuscles": [],
+            "maintenanceMuscles": [],
+            "painNotes": ""
+        },
+        "days": [
+            {
+                "minutes": 30,
+                "items": [
+                    {
+                        "id": "chest-supported-row",
+                        "sets": 2
+                    },
+                    {
+                        "id": "db-rdl",
+                        "sets": 2
+                    },
+                    {
+                        "id": "narrow-leg-press",
+                        "sets": 2
+                    },
+                    {
+                        "id": "cable-lying-extension",
+                        "sets": 2
+                    },
+                    {
+                        "id": "calf-barbell",
+                        "sets": 2
+                    },
+                    {
+                        "id": "incline-hammer",
+                        "sets": 2
+                    }
+                ]
+            },
+            {
+                "minutes": 30,
+                "items": [
+                    {
+                        "id": "decline-bench",
+                        "sets": 2
+                    },
+                    {
+                        "id": "leg-press",
+                        "sets": 2
+                    },
+                    {
+                        "id": "ab-machine",
+                        "sets": 2
+                    },
+                    {
+                        "id": "calf-donkey",
+                        "sets": 2
+                    },
+                    {
+                        "id": "hammer-curl",
+                        "sets": 2
+                    },
+                    {
+                        "id": "low-cable-fly",
+                        "sets": 2
+                    }
+                ]
+            },
+            {
+                "minutes": 30,
+                "items": [
+                    {
+                        "id": "barbell-bench",
+                        "sets": 2
+                    },
+                    {
+                        "id": "cable-row",
+                        "sets": 2
+                    },
+                    {
+                        "id": "machine-shoulder",
+                        "sets": 2
+                    },
+                    {
+                        "id": "romanian-deadlift",
+                        "sets": 2
+                    },
+                    {
+                        "id": "pallof-press",
+                        "sets": 3
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "profile": {
+            "heightCm": 175,
+            "weightKg": 75.0,
+            "experience": "BEGINNER",
+            "daysPerWeek": 1,
+            "sessionMinutes": 60,
+            "splitPreference": "AUTO",
+            "goal": "HYPERTROPHY",
+            "equipment": [
+                "BODYWEIGHT",
+                "DUMBBELLS",
+                "BARBELL",
+                "BENCH",
+                "CABLE",
+                "MACHINE",
+                "PULL_UP_BAR",
+                "DIP_BARS",
+                "EZ_BAR"
+            ],
+            "priorityMuscles": [],
+            "maintenanceMuscles": [],
+            "painNotes": ""
+        },
+        "days": [
+            {
+                "minutes": 60,
+                "items": [
+                    {
+                        "id": "barbell-bench",
+                        "sets": 2
+                    },
+                    {
+                        "id": "chest-supported-row",
+                        "sets": 3
+                    },
+                    {
+                        "id": "db-rdl",
+                        "sets": 3
+                    },
+                    {
+                        "id": "leg-press",
+                        "sets": 3
+                    },
+                    {
+                        "id": "ab-machine",
+                        "sets": 3
+                    },
+                    {
+                        "id": "calf-barbell",
+                        "sets": 2
+                    },
+                    {
+                        "id": "face-pull",
+                        "sets": 2
+                    },
+                    {
+                        "id": "hammer-curl",
+                        "sets": 4
+                    },
+                    {
+                        "id": "lateral-raise",
+                        "sets": 2
+                    },
+                    {
+                        "id": "low-cable-fly",
+                        "sets": 2
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "profile": {
+            "heightCm": 175,
+            "weightKg": 75.0,
+            "experience": "BEGINNER",
+            "daysPerWeek": 2,
+            "sessionMinutes": 60,
+            "splitPreference": "SPLIT",
+            "goal": "HYPERTROPHY",
+            "equipment": [
+                "BODYWEIGHT",
+                "DUMBBELLS",
+                "BARBELL",
+                "BENCH",
+                "CABLE",
+                "MACHINE",
+                "PULL_UP_BAR",
+                "DIP_BARS",
+                "EZ_BAR"
+            ],
+            "priorityMuscles": [],
+            "maintenanceMuscles": [],
+            "painNotes": ""
+        },
+        "days": [
+            {
+                "minutes": 60,
+                "items": [
+                    {
+                        "id": "barbell-bench",
+                        "sets": 2
+                    },
+                    {
+                        "id": "chest-supported-row",
+                        "sets": 3
+                    },
+                    {
+                        "id": "decline-bench",
+                        "sets": 3
+                    },
+                    {
+                        "id": "lat-pulldown",
+                        "sets": 2
+                    },
+                    {
+                        "id": "barbell-wrist-curl",
+                        "sets": 2
+                    },
+                    {
+                        "id": "cable-lying-extension",
+                        "sets": 4
+                    },
+                    {
+                        "id": "face-pull",
+                        "sets": 2
+                    },
+                    {
+                        "id": "hammer-curl",
+                        "sets": 4
+                    },
+                    {
+                        "id": "lateral-raise",
+                        "sets": 2
+                    },
+                    {
+                        "id": "low-cable-fly",
+                        "sets": 2
+                    }
+                ]
+            },
+            {
+                "minutes": 58,
+                "items": [
+                    {
+                        "id": "leg-press",
+                        "sets": 4
+                    },
+                    {
+                        "id": "romanian-deadlift",
+                        "sets": 3
+                    },
+                    {
+                        "id": "split-squat",
+                        "sets": 3
+                    },
+                    {
+                        "id": "ab-machine",
+                        "sets": 4
+                    },
+                    {
+                        "id": "bodyweight-calf",
+                        "sets": 2
+                    },
+                    {
+                        "id": "calf-barbell",
+                        "sets": 4
+                    },
+                    {
+                        "id": "sliding-leg-curl",
+                        "sets": 4
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "profile": {
+            "heightCm": 175,
+            "weightKg": 75.0,
+            "experience": "BEGINNER",
+            "daysPerWeek": 4,
+            "sessionMinutes": 60,
+            "splitPreference": "AUTO",
+            "goal": "HYPERTROPHY",
+            "equipment": [
+                "BODYWEIGHT",
+                "DUMBBELLS",
+                "BARBELL",
+                "BENCH",
+                "CABLE",
+                "MACHINE",
+                "PULL_UP_BAR",
+                "DIP_BARS",
+                "EZ_BAR"
+            ],
+            "priorityMuscles": [],
+            "maintenanceMuscles": [],
+            "painNotes": ""
+        },
+        "days": [
+            {
+                "minutes": 39,
+                "items": [
+                    {
+                        "id": "barbell-bench",
+                        "sets": 3
+                    },
+                    {
+                        "id": "chest-supported-row",
+                        "sets": 3
+                    },
+                    {
+                        "id": "cable-lying-extension",
+                        "sets": 2
+                    },
+                    {
+                        "id": "face-pull",
+                        "sets": 2
+                    },
+                    {
+                        "id": "hammer-curl",
+                        "sets": 4
+                    },
+                    {
+                        "id": "pallof-press",
+                        "sets": 2
+                    }
+                ]
+            },
+            {
+                "minutes": 32,
+                "items": [
+                    {
+                        "id": "narrow-leg-press",
+                        "sets": 3
+                    },
+                    {
+                        "id": "romanian-deadlift",
+                        "sets": 2
+                    },
+                    {
+                        "id": "calf-barbell",
+                        "sets": 3
+                    },
+                    {
+                        "id": "sliding-leg-curl",
+                        "sets": 4
+                    }
+                ]
+            },
+            {
+                "minutes": 40,
+                "items": [
+                    {
+                        "id": "cable-row",
+                        "sets": 4
+                    },
+                    {
+                        "id": "decline-bench",
+                        "sets": 3
+                    },
+                    {
+                        "id": "incline-hammer",
+                        "sets": 2
+                    },
+                    {
+                        "id": "lateral-raise",
+                        "sets": 2
+                    },
+                    {
+                        "id": "low-cable-fly",
+                        "sets": 2
+                    },
+                    {
+                        "id": "overhead-extension",
+                        "sets": 3
+                    }
+                ]
+            },
+            {
+                "minutes": 32,
+                "items": [
+                    {
+                        "id": "db-rdl",
+                        "sets": 2
+                    },
+                    {
+                        "id": "leg-press",
+                        "sets": 3
+                    },
+                    {
+                        "id": "split-squat",
+                        "sets": 2
+                    },
+                    {
+                        "id": "ab-machine",
+                        "sets": 3
+                    },
+                    {
+                        "id": "calf-donkey",
+                        "sets": 2
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "profile": {
+            "heightCm": 175,
+            "weightKg": 75.0,
+            "experience": "BEGINNER",
+            "daysPerWeek": 5,
+            "sessionMinutes": 60,
+            "splitPreference": "SPLIT",
+            "goal": "HYPERTROPHY",
+            "equipment": [
+                "BODYWEIGHT",
+                "DUMBBELLS",
+                "BARBELL",
+                "BENCH",
+                "CABLE",
+                "MACHINE",
+                "PULL_UP_BAR",
+                "DIP_BARS",
+                "EZ_BAR"
+            ],
+            "priorityMuscles": [],
+            "maintenanceMuscles": [],
+            "painNotes": ""
+        },
+        "days": [
+            {
+                "minutes": 30,
+                "items": [
+                    {
+                        "id": "barbell-bench",
+                        "sets": 3
+                    },
+                    {
+                        "id": "ab-machine",
+                        "sets": 2
+                    },
+                    {
+                        "id": "calf-donkey",
+                        "sets": 2
+                    },
+                    {
+                        "id": "low-cable-fly",
+                        "sets": 2
+                    },
+                    {
+                        "id": "overhead-extension",
+                        "sets": 3
+                    }
+                ]
+            },
+            {
+                "minutes": 30,
+                "items": [
+                    {
+                        "id": "arnold-press",
+                        "sets": 2
+                    },
+                    {
+                        "id": "chest-supported-row",
+                        "sets": 3
+                    },
+                    {
+                        "id": "lat-pulldown",
+                        "sets": 3
+                    },
+                    {
+                        "id": "hammer-curl",
+                        "sets": 3
+                    }
+                ]
+            },
+            {
+                "minutes": 29,
+                "items": [
+                    {
+                        "id": "narrow-leg-press",
+                        "sets": 3
+                    },
+                    {
+                        "id": "romanian-deadlift",
+                        "sets": 2
+                    },
+                    {
+                        "id": "split-squat",
+                        "sets": 2
+                    },
+                    {
+                        "id": "pallof-press",
+                        "sets": 3
+                    }
+                ]
+            },
+            {
+                "minutes": 28,
+                "items": [
+                    {
+                        "id": "cable-row",
+                        "sets": 2
+                    },
+                    {
+                        "id": "decline-bench",
+                        "sets": 3
+                    },
+                    {
+                        "id": "machine-shoulder",
+                        "sets": 2
+                    },
+                    {
+                        "id": "incline-hammer",
+                        "sets": 3
+                    }
+                ]
+            },
+            {
+                "minutes": 31,
+                "items": [
+                    {
+                        "id": "db-rdl",
+                        "sets": 2
+                    },
+                    {
+                        "id": "leg-press",
+                        "sets": 3
+                    },
+                    {
+                        "id": "calf-barbell",
+                        "sets": 3
+                    },
+                    {
+                        "id": "sliding-leg-curl",
+                        "sets": 4
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "profile": {
+            "heightCm": 175,
+            "weightKg": 75.0,
+            "experience": "ADVANCED",
+            "daysPerWeek": 6,
+            "sessionMinutes": 60,
+            "splitPreference": "AUTO",
+            "goal": "HYPERTROPHY",
+            "equipment": [
+                "BODYWEIGHT",
+                "DUMBBELLS",
+                "BARBELL",
+                "BENCH",
+                "CABLE",
+                "MACHINE",
+                "PULL_UP_BAR",
+                "DIP_BARS",
+                "EZ_BAR"
+            ],
+            "priorityMuscles": [],
+            "maintenanceMuscles": [],
+            "painNotes": ""
+        },
+        "days": [
+            {
+                "minutes": 29,
+                "items": [
+                    {
+                        "id": "dips",
+                        "sets": 3
+                    },
+                    {
+                        "id": "incline-barbell",
+                        "sets": 2
+                    },
+                    {
+                        "id": "face-pull",
+                        "sets": 2
+                    },
+                    {
+                        "id": "low-cable-fly",
+                        "sets": 2
+                    },
+                    {
+                        "id": "machine-triceps",
+                        "sets": 2
+                    }
+                ]
+            },
+            {
+                "minutes": 29,
+                "items": [
+                    {
+                        "id": "chest-supported-row",
+                        "sets": 2
+                    },
+                    {
+                        "id": "lat-pulldown",
+                        "sets": 2
+                    },
+                    {
+                        "id": "calf-donkey",
+                        "sets": 4
+                    },
+                    {
+                        "id": "hammer-curl",
+                        "sets": 4
+                    }
+                ]
+            },
+            {
+                "minutes": 35,
+                "items": [
+                    {
+                        "id": "barbell-squat",
+                        "sets": 2
+                    },
+                    {
+                        "id": "db-rdl",
+                        "sets": 2
+                    },
+                    {
+                        "id": "split-squat",
+                        "sets": 2
+                    },
+                    {
+                        "id": "leg-extension",
+                        "sets": 3
+                    },
+                    {
+                        "id": "sliding-leg-curl",
+                        "sets": 4
+                    }
+                ]
+            },
+            {
+                "minutes": 30,
+                "items": [
+                    {
+                        "id": "barbell-bench",
+                        "sets": 4
+                    },
+                    {
+                        "id": "cable-pushdown",
+                        "sets": 2
+                    },
+                    {
+                        "id": "lateral-raise",
+                        "sets": 2
+                    },
+                    {
+                        "id": "pallof-press",
+                        "sets": 4
+                    }
+                ]
+            },
+            {
+                "minutes": 30,
+                "items": [
+                    {
+                        "id": "arnold-press",
+                        "sets": 2
+                    },
+                    {
+                        "id": "cable-row",
+                        "sets": 3
+                    },
+                    {
+                        "id": "pull-up",
+                        "sets": 2
+                    },
+                    {
+                        "id": "incline-hammer",
+                        "sets": 4
+                    }
+                ]
+            },
+            {
+                "minutes": 35,
+                "items": [
+                    {
+                        "id": "leg-press",
+                        "sets": 3
+                    },
+                    {
+                        "id": "romanian-deadlift",
+                        "sets": 2
+                    },
+                    {
+                        "id": "ab-machine",
+                        "sets": 3
+                    },
+                    {
+                        "id": "calf-barbell",
+                        "sets": 3
+                    },
+                    {
+                        "id": "sliding-leg-curl",
+                        "sets": 3
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "profile": {
+            "heightCm": 175,
+            "weightKg": 75.0,
+            "experience": "BEGINNER",
+            "daysPerWeek": 3,
+            "sessionMinutes": 60,
+            "splitPreference": "AUTO",
+            "goal": "HYPERTROPHY",
+            "equipment": [
+                "BODYWEIGHT",
+                "DUMBBELLS",
+                "BARBELL",
+                "BENCH",
+                "CABLE",
+                "MACHINE",
+                "PULL_UP_BAR",
+                "DIP_BARS",
+                "EZ_BAR"
+            ],
+            "priorityMuscles": [
+                "BICEPS",
+                "CALVES"
+            ],
+            "maintenanceMuscles": [],
+            "painNotes": ""
+        },
+        "days": [
+            {
+                "minutes": 49,
+                "items": [
+                    {
+                        "id": "lat-pulldown",
+                        "sets": 3
+                    },
+                    {
+                        "id": "chest-supported-row",
+                        "sets": 2
+                    },
+                    {
+                        "id": "leg-press",
+                        "sets": 2
+                    },
+                    {
+                        "id": "push-up",
+                        "sets": 2
+                    },
+                    {
+                        "id": "romanian-deadlift",
+                        "sets": 2
+                    },
+                    {
+                        "id": "calf-barbell",
+                        "sets": 3
+                    },
+                    {
+                        "id": "rope-hammer-curl",
+                        "sets": 2
+                    },
+                    {
+                        "id": "ab-machine",
+                        "sets": 2
+                    },
+                    {
+                        "id": "overhead-extension",
+                        "sets": 3
+                    }
+                ]
+            },
+            {
+                "minutes": 47,
+                "items": [
+                    {
+                        "id": "arnold-press",
+                        "sets": 2
+                    },
+                    {
+                        "id": "db-rdl",
+                        "sets": 2
+                    },
+                    {
+                        "id": "decline-bench",
+                        "sets": 2
+                    },
+                    {
+                        "id": "hack-squat",
+                        "sets": 3
+                    },
+                    {
+                        "id": "calf-donkey",
+                        "sets": 2
+                    },
+                    {
+                        "id": "hammer-curl",
+                        "sets": 4
+                    },
+                    {
+                        "id": "low-cable-fly",
+                        "sets": 2
+                    },
+                    {
+                        "id": "pallof-press",
+                        "sets": 3
+                    }
+                ]
+            },
+            {
+                "minutes": 47,
+                "items": [
+                    {
+                        "id": "cable-row",
+                        "sets": 3
+                    },
+                    {
+                        "id": "barbell-bench",
+                        "sets": 2
+                    },
+                    {
+                        "id": "machine-shoulder",
+                        "sets": 2
+                    },
+                    {
+                        "id": "narrow-leg-press",
+                        "sets": 3
+                    },
+                    {
+                        "id": "calf-leg-press",
+                        "sets": 3
+                    },
+                    {
+                        "id": "incline-hammer",
+                        "sets": 2
+                    },
+                    {
+                        "id": "sliding-leg-curl",
+                        "sets": 4
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "profile": {
+            "heightCm": 175,
+            "weightKg": 75.0,
+            "experience": "BEGINNER",
+            "daysPerWeek": 3,
+            "sessionMinutes": 60,
+            "splitPreference": "AUTO",
+            "goal": "HYPERTROPHY",
+            "equipment": [
+                "BODYWEIGHT",
+                "DUMBBELLS"
+            ],
+            "priorityMuscles": [],
+            "maintenanceMuscles": [],
+            "painNotes": ""
+        },
+        "days": [
+            {
+                "minutes": 42,
+                "items": [
+                    {
+                        "id": "db-rdl",
+                        "sets": 2
+                    },
+                    {
+                        "id": "db-squat",
+                        "sets": 2
+                    },
+                    {
+                        "id": "push-up",
+                        "sets": 4
+                    },
+                    {
+                        "id": "split-squat",
+                        "sets": 2
+                    },
+                    {
+                        "id": "two-db-row",
+                        "sets": 2
+                    },
+                    {
+                        "id": "db-calf",
+                        "sets": 3
+                    },
+                    {
+                        "id": "sliding-leg-curl",
+                        "sets": 2
+                    }
+                ]
+            },
+            {
+                "minutes": 47,
+                "items": [
+                    {
+                        "id": "bodyweight-squat",
+                        "sets": 3
+                    },
+                    {
+                        "id": "overhead-press",
+                        "sets": 2
+                    },
+                    {
+                        "id": "push-up",
+                        "sets": 3
+                    },
+                    {
+                        "id": "two-db-row",
+                        "sets": 2
+                    },
+                    {
+                        "id": "bicycle-crunch",
+                        "sets": 2
+                    },
+                    {
+                        "id": "lateral-raise",
+                        "sets": 2
+                    },
+                    {
+                        "id": "reverse-curl",
+                        "sets": 3
+                    },
+                    {
+                        "id": "sliding-leg-curl",
+                        "sets": 4
+                    }
+                ]
+            },
+            {
+                "minutes": 45,
+                "items": [
+                    {
+                        "id": "db-floor-press",
+                        "sets": 2
+                    },
+                    {
+                        "id": "goblet-squat",
+                        "sets": 2
+                    },
+                    {
+                        "id": "two-db-row",
+                        "sets": 2
+                    },
+                    {
+                        "id": "db-calf",
+                        "sets": 2
+                    },
+                    {
+                        "id": "db-reverse-fly",
+                        "sets": 4
+                    },
+                    {
+                        "id": "hammer-curl",
+                        "sets": 3
+                    },
+                    {
+                        "id": "overhead-extension",
+                        "sets": 2
+                    },
+                    {
+                        "id": "side-plank",
+                        "sets": 3
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "profile": {
+            "heightCm": 175,
+            "weightKg": 75.0,
+            "experience": "BEGINNER",
+            "daysPerWeek": 3,
+            "sessionMinutes": 60,
+            "splitPreference": "AUTO",
+            "goal": "MAINTENANCE",
+            "equipment": [
+                "BODYWEIGHT",
+                "DUMBBELLS",
+                "BARBELL",
+                "BENCH",
+                "CABLE",
+                "MACHINE",
+                "PULL_UP_BAR",
+                "DIP_BARS",
+                "EZ_BAR"
+            ],
+            "priorityMuscles": [],
+            "maintenanceMuscles": [],
+            "painNotes": ""
+        },
+        "days": [
+            {
+                "minutes": 28,
+                "items": [
+                    {
+                        "id": "bodyweight-squat",
+                        "sets": 3
+                    },
+                    {
+                        "id": "cable-row",
+                        "sets": 2
+                    },
+                    {
+                        "id": "db-rdl",
+                        "sets": 2
+                    },
+                    {
+                        "id": "decline-bench",
+                        "sets": 3
+                    }
+                ]
+            },
+            {
+                "minutes": 32,
+                "items": [
+                    {
+                        "id": "calf-barbell",
+                        "sets": 3
+                    },
+                    {
+                        "id": "hammer-curl",
+                        "sets": 4
+                    },
+                    {
+                        "id": "low-cable-fly",
+                        "sets": 2
+                    },
+                    {
+                        "id": "overhead-extension",
+                        "sets": 2
+                    },
+                    {
+                        "id": "sliding-leg-curl",
+                        "sets": 3
+                    }
+                ]
+            },
+            {
+                "minutes": 27,
+                "items": [
+                    {
+                        "id": "arnold-press",
+                        "sets": 2
+                    },
+                    {
+                        "id": "chest-supported-row",
+                        "sets": 3
+                    },
+                    {
+                        "id": "leg-press",
+                        "sets": 2
+                    },
+                    {
+                        "id": "ab-machine",
+                        "sets": 3
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "profile": {
+            "heightCm": 175,
+            "weightKg": 75.0,
+            "experience": "BEGINNER",
+            "daysPerWeek": 3,
+            "sessionMinutes": 60,
+            "splitPreference": "AUTO",
+            "goal": "HYPERTROPHY",
+            "equipment": [],
+            "priorityMuscles": [],
+            "maintenanceMuscles": [],
+            "painNotes": ""
+        },
+        "days": [
+            {
+                "minutes": 0,
+                "items": []
+            },
+            {
+                "minutes": 0,
+                "items": []
+            },
+            {
+                "minutes": 0,
+                "items": []
+            }
+        ]
+    }
+]

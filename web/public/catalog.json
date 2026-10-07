@@ -1,0 +1,5429 @@
+{
+    "version": 3,
+    "exercises": [
+        {
+            "id": "db-bench",
+            "name": "Жим гантелей лёжа",
+            "description": "",
+            "technique": [],
+            "pattern": "HORIZONTAL_PUSH",
+            "equipment": [
+                "DUMBBELLS",
+                "BENCH"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 120,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "MID_CHEST",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "TRICEPS_LATERAL",
+                    "coefficient": 0.45,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "FRONT_DELTS",
+                    "coefficient": 0.35,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "machine-chest",
+            "name": "Жим в тренажёре",
+            "description": "",
+            "technique": [],
+            "pattern": "HORIZONTAL_PUSH",
+            "equipment": [
+                "MACHINE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 120,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "MID_CHEST",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "TRICEPS_LATERAL",
+                    "coefficient": 0.4,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "FRONT_DELTS",
+                    "coefficient": 0.3,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "incline-barbell",
+            "name": "Жим штанги на наклонной скамье",
+            "description": "",
+            "technique": [],
+            "pattern": "HORIZONTAL_PUSH",
+            "equipment": [
+                "BARBELL",
+                "BENCH"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 120,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "UPPER_CHEST",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "TRICEPS_LONG",
+                    "coefficient": 0.45,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "FRONT_DELTS",
+                    "coefficient": 0.5,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "db-floor-press",
+            "name": "Жим гантелей с пола",
+            "description": "",
+            "technique": [],
+            "pattern": "HORIZONTAL_PUSH",
+            "equipment": [
+                "DUMBBELLS"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 90,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "MID_CHEST",
+                    "coefficient": 0.85,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "TRICEPS_LATERAL",
+                    "coefficient": 0.5,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "cable-fly",
+            "name": "Сведение рук в кроссовере",
+            "description": "",
+            "technique": [],
+            "pattern": "CHEST_FLY",
+            "equipment": [
+                "CABLE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "MID_CHEST",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "low-cable-fly",
+            "name": "Сведение рук снизу в кроссовере",
+            "description": "",
+            "technique": [],
+            "pattern": "CHEST_FLY",
+            "equipment": [
+                "CABLE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "UPPER_CHEST",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "MID_CHEST",
+                    "coefficient": 0.6,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "high-cable-fly",
+            "name": "Сведение рук сверху в кроссовере",
+            "description": "",
+            "technique": [],
+            "pattern": "CHEST_FLY",
+            "equipment": [
+                "CABLE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "LOWER_CHEST",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "MID_CHEST",
+                    "coefficient": 0.6,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "pec-deck",
+            "name": "Бабочка в тренажёре",
+            "description": "",
+            "technique": [],
+            "pattern": "CHEST_FLY",
+            "equipment": [
+                "MACHINE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "MID_CHEST",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "db-fly",
+            "name": "Разведение гантелей лёжа",
+            "description": "",
+            "technique": [],
+            "pattern": "CHEST_FLY",
+            "equipment": [
+                "DUMBBELLS",
+                "BENCH"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "MID_CHEST",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "machine-shoulder",
+            "name": "Жим плечами в тренажёре",
+            "description": "",
+            "technique": [],
+            "pattern": "VERTICAL_PUSH",
+            "equipment": [
+                "MACHINE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 120,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "FRONT_DELTS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "SIDE_DELTS",
+                    "coefficient": 0.6,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "TRICEPS_LATERAL",
+                    "coefficient": 0.45,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "cable-lateral",
+            "name": "Отведение руки на блоке",
+            "description": "",
+            "technique": [],
+            "pattern": "SHOULDER_ABDUCTION",
+            "equipment": [
+                "CABLE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": true,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 60,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "SIDE_DELTS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "machine-lateral",
+            "name": "Разведение рук в тренажёре",
+            "description": "",
+            "technique": [],
+            "pattern": "SHOULDER_ABDUCTION",
+            "equipment": [
+                "MACHINE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 60,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "SIDE_DELTS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "db-reverse-fly",
+            "name": "Разведение гантелей в наклоне",
+            "description": "",
+            "technique": [],
+            "pattern": "REAR_DELT",
+            "equipment": [
+                "DUMBBELLS"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "REAR_DELTS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "UPPER_BACK",
+                    "coefficient": 0.4,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "reverse-pec-deck",
+            "name": "Обратная бабочка",
+            "description": "",
+            "technique": [],
+            "pattern": "REAR_DELT",
+            "equipment": [
+                "MACHINE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "REAR_DELTS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "UPPER_BACK",
+                    "coefficient": 0.35,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "face-pull",
+            "name": "Тяга каната к лицу",
+            "description": "",
+            "technique": [],
+            "pattern": "REAR_DELT",
+            "equipment": [
+                "CABLE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "REAR_DELTS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "UPPER_BACK",
+                    "coefficient": 0.5,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "neutral-pulldown",
+            "name": "Тяга верхнего блока нейтральным хватом",
+            "description": "",
+            "technique": [],
+            "pattern": "VERTICAL_PULL",
+            "equipment": [
+                "CABLE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 120,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "LATS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BICEPS_LONG",
+                    "coefficient": 0.45,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BRACHIALIS",
+                    "coefficient": 0.4,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "machine-row",
+            "name": "Горизонтальная тяга в тренажёре",
+            "description": "",
+            "technique": [],
+            "pattern": "HORIZONTAL_PULL",
+            "equipment": [
+                "MACHINE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 120,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "UPPER_BACK",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "LATS",
+                    "coefficient": 0.75,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BICEPS_SHORT",
+                    "coefficient": 0.4,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "REAR_DELTS",
+                    "coefficient": 0.3,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "chest-supported-row",
+            "name": "Тяга гантелей с упором грудью",
+            "description": "",
+            "technique": [],
+            "pattern": "HORIZONTAL_PULL",
+            "equipment": [
+                "DUMBBELLS",
+                "BENCH"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 120,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "UPPER_BACK",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "LATS",
+                    "coefficient": 0.7,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BICEPS_SHORT",
+                    "coefficient": 0.4,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "REAR_DELTS",
+                    "coefficient": 0.4,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "barbell-row",
+            "name": "Тяга штанги в наклоне",
+            "description": "",
+            "technique": [],
+            "pattern": "HORIZONTAL_PULL",
+            "equipment": [
+                "BARBELL"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 120,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "UPPER_BACK",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "LATS",
+                    "coefficient": 0.7,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BICEPS_SHORT",
+                    "coefficient": 0.4,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "straight-arm-pull",
+            "name": "Тяга блока прямыми руками",
+            "description": "",
+            "technique": [],
+            "pattern": "VERTICAL_PULL",
+            "equipment": [
+                "CABLE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "LATS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "db-curl",
+            "name": "Сгибание рук с гантелями",
+            "description": "",
+            "technique": [],
+            "pattern": "ELBOW_FLEXION",
+            "equipment": [
+                "DUMBBELLS"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "BICEPS_LONG",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BICEPS_SHORT",
+                    "coefficient": 0.9,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BRACHIALIS",
+                    "coefficient": 0.5,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "barbell-curl",
+            "name": "Сгибание рук со штангой",
+            "description": "",
+            "technique": [],
+            "pattern": "ELBOW_FLEXION",
+            "equipment": [
+                "BARBELL"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "BICEPS_SHORT",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BICEPS_LONG",
+                    "coefficient": 0.9,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BRACHIORADIALIS",
+                    "coefficient": 0.3,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "preacher-curl",
+            "name": "Сгибание рук на скамье Скотта",
+            "description": "",
+            "technique": [],
+            "pattern": "ELBOW_FLEXION",
+            "equipment": [
+                "MACHINE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "BICEPS_SHORT",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BICEPS_LONG",
+                    "coefficient": 0.7,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "cable-curl",
+            "name": "Сгибание рук на нижнем блоке",
+            "description": "",
+            "technique": [],
+            "pattern": "ELBOW_FLEXION",
+            "equipment": [
+                "CABLE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "BICEPS_LONG",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BICEPS_SHORT",
+                    "coefficient": 0.9,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "reverse-curl",
+            "name": "Обратные сгибания с гантелями",
+            "description": "",
+            "technique": [],
+            "pattern": "ELBOW_FLEXION",
+            "equipment": [
+                "DUMBBELLS"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "BRACHIORADIALIS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BRACHIALIS",
+                    "coefficient": 0.7,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BICEPS_SHORT",
+                    "coefficient": 0.4,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "rope-extension",
+            "name": "Разгибание рук с канатом",
+            "description": "",
+            "technique": [],
+            "pattern": "ELBOW_EXTENSION",
+            "equipment": [
+                "CABLE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "TRICEPS_LATERAL",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "TRICEPS_MEDIAL",
+                    "coefficient": 0.8,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "overhead-cable",
+            "name": "Разгибание рук над головой на блоке",
+            "description": "",
+            "technique": [],
+            "pattern": "ELBOW_EXTENSION",
+            "equipment": [
+                "CABLE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "TRICEPS_LONG",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "TRICEPS_MEDIAL",
+                    "coefficient": 0.6,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "lying-db-extension",
+            "name": "Разгибание рук с гантелями лёжа",
+            "description": "",
+            "technique": [],
+            "pattern": "ELBOW_EXTENSION",
+            "equipment": [
+                "DUMBBELLS",
+                "BENCH"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "TRICEPS_LONG",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "TRICEPS_LATERAL",
+                    "coefficient": 0.6,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "leg-press",
+            "name": "Жим ногами",
+            "description": "",
+            "technique": [],
+            "pattern": "SQUAT",
+            "equipment": [
+                "MACHINE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 120,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "QUADS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "GLUTE_MAX",
+                    "coefficient": 0.6,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "hack-squat",
+            "name": "Гакк-присед",
+            "description": "",
+            "technique": [],
+            "pattern": "SQUAT",
+            "equipment": [
+                "MACHINE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 120,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "QUADS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "GLUTE_MAX",
+                    "coefficient": 0.5,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "bodyweight-squat",
+            "name": "Приседания без отягощения",
+            "description": "",
+            "technique": [],
+            "pattern": "SQUAT",
+            "equipment": [
+                "BODYWEIGHT"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "QUADS",
+                    "coefficient": 0.8,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "GLUTE_MAX",
+                    "coefficient": 0.5,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "split-squat",
+            "name": "Сплит-присед с гантелями",
+            "description": "",
+            "technique": [],
+            "pattern": "LUNGE",
+            "equipment": [
+                "DUMBBELLS"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": true,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 90,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "QUADS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "GLUTE_MAX",
+                    "coefficient": 0.65,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "bodyweight-lunge",
+            "name": "Выпады без отягощения",
+            "description": "",
+            "technique": [],
+            "pattern": "LUNGE",
+            "equipment": [
+                "BODYWEIGHT"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": true,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "QUADS",
+                    "coefficient": 0.85,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "GLUTE_MAX",
+                    "coefficient": 0.7,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "seated-leg-curl",
+            "name": "Сгибание ног сидя",
+            "description": "",
+            "technique": [],
+            "pattern": "KNEE_FLEXION",
+            "equipment": [
+                "MACHINE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 90,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "HAMSTRINGS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "sliding-leg-curl",
+            "name": "Сгибание ног со скольжением пяток",
+            "description": "",
+            "technique": [],
+            "pattern": "KNEE_FLEXION",
+            "equipment": [
+                "BODYWEIGHT"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 90,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "HAMSTRINGS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "GLUTE_MAX",
+                    "coefficient": 0.35,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "hip-thrust",
+            "name": "Ягодичный мост со штангой",
+            "description": "",
+            "technique": [],
+            "pattern": "HIP_EXTENSION",
+            "equipment": [
+                "BARBELL",
+                "BENCH"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 120,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "GLUTE_MAX",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "HAMSTRINGS",
+                    "coefficient": 0.25,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "db-glute-bridge",
+            "name": "Ягодичный мост с гантелью",
+            "description": "",
+            "technique": [],
+            "pattern": "HIP_EXTENSION",
+            "equipment": [
+                "DUMBBELLS"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 90,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "GLUTE_MAX",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "HAMSTRINGS",
+                    "coefficient": 0.25,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "bodyweight-bridge",
+            "name": "Ягодичный мост без отягощения",
+            "description": "",
+            "technique": [],
+            "pattern": "HIP_EXTENSION",
+            "equipment": [
+                "BODYWEIGHT"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "GLUTE_MAX",
+                    "coefficient": 0.8,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "HAMSTRINGS",
+                    "coefficient": 0.3,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "machine-abduction",
+            "name": "Отведение бёдер в тренажёре",
+            "description": "",
+            "technique": [],
+            "pattern": "HIP_ABDUCTION",
+            "equipment": [
+                "MACHINE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 60,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "GLUTE_MED",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "side-leg-raise",
+            "name": "Отведение ноги лёжа на боку",
+            "description": "",
+            "technique": [],
+            "pattern": "HIP_ABDUCTION",
+            "equipment": [
+                "BODYWEIGHT"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": true,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 60,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "GLUTE_MED",
+                    "coefficient": 0.8,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "db-calf",
+            "name": "Подъём на носки с гантелями",
+            "description": "",
+            "technique": [],
+            "pattern": "CALF_RAISE",
+            "equipment": [
+                "DUMBBELLS"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 60,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "CALVES",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "bodyweight-calf",
+            "name": "Подъём на носки без отягощения",
+            "description": "",
+            "technique": [],
+            "pattern": "CALF_RAISE",
+            "equipment": [
+                "BODYWEIGHT"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 60,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "CALVES",
+                    "coefficient": 0.8,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "seated-calf",
+            "name": "Подъём на носки сидя",
+            "description": "",
+            "technique": [],
+            "pattern": "CALF_RAISE",
+            "equipment": [
+                "MACHINE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 60,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "CALVES",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "crunch",
+            "name": "Скручивания на полу",
+            "description": "",
+            "technique": [],
+            "pattern": "CORE",
+            "equipment": [
+                "BODYWEIGHT"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 60,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "ABS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "reverse-crunch",
+            "name": "Обратные скручивания",
+            "description": "",
+            "technique": [],
+            "pattern": "CORE",
+            "equipment": [
+                "BODYWEIGHT"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 60,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "ABS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "side-plank",
+            "name": "Боковая планка",
+            "description": "",
+            "technique": [],
+            "pattern": "CORE",
+            "equipment": [
+                "BODYWEIGHT"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 60,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "OBLIQUES",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "ABS",
+                    "coefficient": 0.4,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "pallof-press",
+            "name": "Жим Паллофа",
+            "description": "",
+            "technique": [],
+            "pattern": "CORE",
+            "equipment": [
+                "CABLE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 60,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "OBLIQUES",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "ABS",
+                    "coefficient": 0.4,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "db-wrist-curl",
+            "name": "Сгибание кистей с гантелями",
+            "description": "",
+            "technique": [],
+            "pattern": "WRIST_CURL",
+            "equipment": [
+                "DUMBBELLS"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 60,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "WRIST_FLEXORS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "barbell-wrist-curl",
+            "name": "Сгибание кистей со штангой",
+            "description": "",
+            "technique": [],
+            "pattern": "WRIST_CURL",
+            "equipment": [
+                "BARBELL"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 60,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "WRIST_FLEXORS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "barbell-bench",
+            "name": "Жим штанги лёжа",
+            "description": "",
+            "technique": [],
+            "pattern": "HORIZONTAL_PUSH",
+            "equipment": [
+                "BARBELL",
+                "BENCH"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 2,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 120,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "MID_CHEST",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "TRICEPS_LATERAL",
+                    "coefficient": 0.55,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "FRONT_DELTS",
+                    "coefficient": 0.45,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "incline-db-press",
+            "name": "Жим гантелей на наклонной скамье",
+            "description": "",
+            "technique": [],
+            "pattern": "HORIZONTAL_PUSH",
+            "equipment": [
+                "DUMBBELLS",
+                "BENCH"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 120,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "UPPER_CHEST",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "LENGTHENED",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "FRONT_DELTS",
+                    "coefficient": 0.55,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "TRICEPS_LONG",
+                    "coefficient": 0.4,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "push-up",
+            "name": "Отжимания",
+            "description": "",
+            "technique": [],
+            "pattern": "HORIZONTAL_PUSH",
+            "equipment": [
+                "BODYWEIGHT"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 8,
+                "last": 20
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "MID_CHEST",
+                    "coefficient": 0.85,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "TRICEPS_LATERAL",
+                    "coefficient": 0.5,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "ABS",
+                    "coefficient": 0.2,
+                    "role": "STABILIZER",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "dips",
+            "name": "Отжимания на брусьях",
+            "description": "",
+            "technique": [],
+            "pattern": "HORIZONTAL_PUSH",
+            "equipment": [
+                "BODYWEIGHT",
+                "DIP_BARS"
+            ],
+            "minimumLevel": "INTERMEDIATE",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 120,
+            "setDurationSeconds": 40,
+            "warnings": [
+                "При дискомфорте в плечах сократите амплитуду или замените упражнение"
+            ],
+            "stimuli": [
+                {
+                    "region": "LOWER_CHEST",
+                    "coefficient": 0.8,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "TRICEPS_LONG",
+                    "coefficient": 0.75,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "FRONT_DELTS",
+                    "coefficient": 0.35,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "overhead-press",
+            "name": "Жим гантелей над головой",
+            "description": "",
+            "technique": [],
+            "pattern": "VERTICAL_PUSH",
+            "equipment": [
+                "DUMBBELLS"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 120,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "FRONT_DELTS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "SIDE_DELTS",
+                    "coefficient": 0.55,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "TRICEPS_LONG",
+                    "coefficient": 0.5,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "lateral-raise",
+            "name": "Разведения гантелей в стороны",
+            "description": "",
+            "technique": [],
+            "pattern": "SHOULDER_ABDUCTION",
+            "equipment": [
+                "DUMBBELLS"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 10,
+                "last": 20
+            },
+            "baseRestSeconds": 60,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "SIDE_DELTS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "pull-up",
+            "name": "Подтягивания",
+            "description": "",
+            "technique": [],
+            "pattern": "VERTICAL_PULL",
+            "equipment": [
+                "BODYWEIGHT",
+                "PULL_UP_BAR"
+            ],
+            "minimumLevel": "INTERMEDIATE",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 120,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "LATS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BICEPS_LONG",
+                    "coefficient": 0.55,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BRACHIALIS",
+                    "coefficient": 0.45,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "lat-pulldown",
+            "name": "Тяга верхнего блока",
+            "description": "",
+            "technique": [],
+            "pattern": "VERTICAL_PULL",
+            "equipment": [
+                "CABLE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 120,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "LATS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BICEPS_LONG",
+                    "coefficient": 0.45,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "UPPER_BACK",
+                    "coefficient": 0.35,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "cable-row",
+            "name": "Тяга горизонтального блока",
+            "description": "",
+            "technique": [],
+            "pattern": "HORIZONTAL_PULL",
+            "equipment": [
+                "CABLE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 120,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "UPPER_BACK",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "LATS",
+                    "coefficient": 0.65,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "REAR_DELTS",
+                    "coefficient": 0.4,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BICEPS_SHORT",
+                    "coefficient": 0.4,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "db-row",
+            "name": "Тяга гантели в наклоне",
+            "description": "",
+            "technique": [],
+            "pattern": "HORIZONTAL_PULL",
+            "equipment": [
+                "DUMBBELLS",
+                "BENCH"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": true,
+            "setupComplexity": 2,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 120,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "LATS",
+                    "coefficient": 0.9,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "UPPER_BACK",
+                    "coefficient": 0.7,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "REAR_DELTS",
+                    "coefficient": 0.35,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "hammer-curl",
+            "name": "Молотковые сгибания",
+            "description": "",
+            "technique": [],
+            "pattern": "ELBOW_FLEXION",
+            "equipment": [
+                "DUMBBELLS"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 8,
+                "last": 15
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "BRACHIALIS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BRACHIORADIALIS",
+                    "coefficient": 0.85,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BICEPS_LONG",
+                    "coefficient": 0.65,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "incline-curl",
+            "name": "Сгибания гантелей на наклонной скамье",
+            "description": "",
+            "technique": [],
+            "pattern": "ELBOW_FLEXION",
+            "equipment": [
+                "DUMBBELLS",
+                "BENCH"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 8,
+                "last": 15
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "BICEPS_LONG",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "LENGTHENED",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BICEPS_SHORT",
+                    "coefficient": 0.65,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BRACHIALIS",
+                    "coefficient": 0.35,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "cable-pushdown",
+            "name": "Разгибание рук на блоке",
+            "description": "",
+            "technique": [],
+            "pattern": "ELBOW_EXTENSION",
+            "equipment": [
+                "CABLE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 8,
+                "last": 15
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "TRICEPS_LATERAL",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "TRICEPS_MEDIAL",
+                    "coefficient": 0.7,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "overhead-extension",
+            "name": "Разгибание рук из-за головы",
+            "description": "",
+            "technique": [],
+            "pattern": "ELBOW_EXTENSION",
+            "equipment": [
+                "DUMBBELLS"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 8,
+                "last": 15
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "TRICEPS_LONG",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "LENGTHENED",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "TRICEPS_MEDIAL",
+                    "coefficient": 0.45,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "goblet-squat",
+            "name": "Кубковый присед",
+            "description": "",
+            "technique": [],
+            "pattern": "SQUAT",
+            "equipment": [
+                "DUMBBELLS"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 120,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "QUADS",
+                    "coefficient": 0.9,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "GLUTE_MAX",
+                    "coefficient": 0.65,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "ABS",
+                    "coefficient": 0.25,
+                    "role": "STABILIZER",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "barbell-squat",
+            "name": "Присед со штангой",
+            "description": "",
+            "technique": [],
+            "pattern": "SQUAT",
+            "equipment": [
+                "BARBELL"
+            ],
+            "minimumLevel": "INTERMEDIATE",
+            "unilateral": false,
+            "setupComplexity": 3,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 150,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "QUADS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "GLUTE_MAX",
+                    "coefficient": 0.8,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "SPINAL_ERECTORS",
+                    "coefficient": 0.35,
+                    "role": "STABILIZER",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "romanian-deadlift",
+            "name": "Румынская тяга",
+            "description": "",
+            "technique": [],
+            "pattern": "HIP_HINGE",
+            "equipment": [
+                "BARBELL"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 2,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 150,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "HAMSTRINGS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "LENGTHENED",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "GLUTE_MAX",
+                    "coefficient": 0.75,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "SPINAL_ERECTORS",
+                    "coefficient": 0.45,
+                    "role": "STABILIZER",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "db-rdl",
+            "name": "Румынская тяга с гантелями",
+            "description": "",
+            "technique": [],
+            "pattern": "HIP_HINGE",
+            "equipment": [
+                "DUMBBELLS"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 120,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "HAMSTRINGS",
+                    "coefficient": 0.9,
+                    "role": "PRIMARY",
+                    "lengthBias": "LENGTHENED",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "GLUTE_MAX",
+                    "coefficient": 0.75,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "SPINAL_ERECTORS",
+                    "coefficient": 0.3,
+                    "role": "STABILIZER",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "reverse-lunge",
+            "name": "Обратные выпады",
+            "description": "",
+            "technique": [],
+            "pattern": "LUNGE",
+            "equipment": [
+                "DUMBBELLS"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": true,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 8,
+                "last": 15
+            },
+            "baseRestSeconds": 120,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "QUADS",
+                    "coefficient": 0.8,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "GLUTE_MAX",
+                    "coefficient": 0.85,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "GLUTE_MED",
+                    "coefficient": 0.35,
+                    "role": "STABILIZER",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "leg-curl",
+            "name": "Сгибание ног в тренажёре",
+            "description": "",
+            "technique": [],
+            "pattern": "KNEE_FLEXION",
+            "equipment": [
+                "MACHINE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 8,
+                "last": 15
+            },
+            "baseRestSeconds": 90,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "HAMSTRINGS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "leg-extension",
+            "name": "Разгибание ног в тренажёре",
+            "description": "",
+            "technique": [],
+            "pattern": "KNEE_EXTENSION",
+            "equipment": [
+                "MACHINE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 10,
+                "last": 20
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "QUADS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "calf-raise",
+            "name": "Подъём на носки стоя",
+            "description": "",
+            "technique": [],
+            "pattern": "CALF_RAISE",
+            "equipment": [
+                "MACHINE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 10,
+                "last": 20
+            },
+            "baseRestSeconds": 60,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "CALVES",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "plank",
+            "name": "Планка",
+            "description": "",
+            "technique": [],
+            "pattern": "CORE",
+            "equipment": [
+                "BODYWEIGHT"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 20,
+                "last": 60
+            },
+            "baseRestSeconds": 60,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "ABS",
+                    "coefficient": 0.75,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "OBLIQUES",
+                    "coefficient": 0.45,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "cable-crunch",
+            "name": "Скручивания на верхнем блоке",
+            "description": "",
+            "technique": [],
+            "pattern": "CORE",
+            "equipment": [
+                "CABLE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 10,
+                "last": 20
+            },
+            "baseRestSeconds": 60,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "ABS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "OBLIQUES",
+                    "coefficient": 0.25,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 2,
+            "reviewed": false
+        },
+        {
+            "id": "ez-curl",
+            "name": "Сгибание рук с EZ-грифом",
+            "description": "",
+            "technique": [],
+            "pattern": "ELBOW_FLEXION",
+            "equipment": [
+                "EZ_BAR"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "BICEPS_SHORT",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BICEPS_LONG",
+                    "coefficient": 0.9,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BRACHIORADIALIS",
+                    "coefficient": 0.3,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "ez-close-curl",
+            "name": "Сгибание с EZ-грифом узким хватом",
+            "description": "",
+            "technique": [],
+            "pattern": "ELBOW_FLEXION",
+            "equipment": [
+                "EZ_BAR"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "BICEPS_SHORT",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BICEPS_LONG",
+                    "coefficient": 0.9,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BRACHIORADIALIS",
+                    "coefficient": 0.3,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "barbell-close-curl",
+            "name": "Сгибание с прямой штангой узким хватом",
+            "description": "",
+            "technique": [],
+            "pattern": "ELBOW_FLEXION",
+            "equipment": [
+                "BARBELL"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "BICEPS_SHORT",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BICEPS_LONG",
+                    "coefficient": 0.9,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BRACHIORADIALIS",
+                    "coefficient": 0.3,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "barbell-wide-curl",
+            "name": "Сгибание с прямой штангой широким хватом",
+            "description": "",
+            "technique": [],
+            "pattern": "ELBOW_FLEXION",
+            "equipment": [
+                "BARBELL"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "BICEPS_SHORT",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BICEPS_LONG",
+                    "coefficient": 0.9,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BRACHIORADIALIS",
+                    "coefficient": 0.3,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "ez-preacher-curl",
+            "name": "Сгибание с EZ-грифом на скамье Скотта",
+            "description": "",
+            "technique": [],
+            "pattern": "ELBOW_FLEXION",
+            "equipment": [
+                "EZ_BAR",
+                "BENCH"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "BICEPS_SHORT",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BICEPS_LONG",
+                    "coefficient": 0.7,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "barbell-reverse-curl",
+            "name": "Обратное сгибание с прямой штангой",
+            "description": "",
+            "technique": [],
+            "pattern": "ELBOW_FLEXION",
+            "equipment": [
+                "BARBELL"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "BRACHIORADIALIS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BRACHIALIS",
+                    "coefficient": 0.7,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BICEPS_SHORT",
+                    "coefficient": 0.4,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "barbell-drag-curl",
+            "name": "Сгибание штанги вдоль корпуса",
+            "description": "",
+            "technique": [],
+            "pattern": "ELBOW_FLEXION",
+            "equipment": [
+                "BARBELL"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "BICEPS_SHORT",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BICEPS_LONG",
+                    "coefficient": 0.9,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BRACHIORADIALIS",
+                    "coefficient": 0.3,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "db-concentration-curl",
+            "name": "Концентрированное сгибание с гантелью",
+            "description": "",
+            "technique": [],
+            "pattern": "ELBOW_FLEXION",
+            "equipment": [
+                "DUMBBELLS",
+                "BENCH"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": true,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "BICEPS_LONG",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BICEPS_SHORT",
+                    "coefficient": 0.9,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BRACHIALIS",
+                    "coefficient": 0.5,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "db-preacher-curl",
+            "name": "Сгибание одной руки с гантелью на скамье Скотта",
+            "description": "",
+            "technique": [],
+            "pattern": "ELBOW_FLEXION",
+            "equipment": [
+                "DUMBBELLS",
+                "BENCH"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": true,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "BICEPS_SHORT",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BICEPS_LONG",
+                    "coefficient": 0.7,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "rope-hammer-curl",
+            "name": "Молотковые сгибания с канатом на блоке",
+            "description": "",
+            "technique": [],
+            "pattern": "ELBOW_FLEXION",
+            "equipment": [
+                "CABLE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 8,
+                "last": 15
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "BRACHIALIS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BRACHIORADIALIS",
+                    "coefficient": 0.85,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BICEPS_LONG",
+                    "coefficient": 0.65,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "db-cross-hammer",
+            "name": "Молотки поперёк корпуса",
+            "description": "",
+            "technique": [],
+            "pattern": "ELBOW_FLEXION",
+            "equipment": [
+                "DUMBBELLS"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": true,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 8,
+                "last": 15
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "BRACHIALIS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BRACHIORADIALIS",
+                    "coefficient": 0.85,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BICEPS_LONG",
+                    "coefficient": 0.65,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "db-seated-curl",
+            "name": "Сгибание гантелей сидя",
+            "description": "",
+            "technique": [],
+            "pattern": "ELBOW_FLEXION",
+            "equipment": [
+                "DUMBBELLS",
+                "BENCH"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "BICEPS_LONG",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BICEPS_SHORT",
+                    "coefficient": 0.9,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BRACHIALIS",
+                    "coefficient": 0.5,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "db-zottman",
+            "name": "Сгибания Зоттмана",
+            "description": "",
+            "technique": [],
+            "pattern": "ELBOW_FLEXION",
+            "equipment": [
+                "DUMBBELLS"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "BICEPS_LONG",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BICEPS_SHORT",
+                    "coefficient": 0.9,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BRACHIALIS",
+                    "coefficient": 0.5,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "cable-preacher-curl",
+            "name": "Сгибание на блоке на скамье Скотта",
+            "description": "",
+            "technique": [],
+            "pattern": "ELBOW_FLEXION",
+            "equipment": [
+                "CABLE",
+                "BENCH"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "BICEPS_SHORT",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BICEPS_LONG",
+                    "coefficient": 0.7,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "incline-hammer",
+            "name": "Молотки на наклонной скамье",
+            "description": "",
+            "technique": [],
+            "pattern": "ELBOW_FLEXION",
+            "equipment": [
+                "DUMBBELLS",
+                "BENCH"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 8,
+                "last": 15
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "BRACHIALIS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BRACHIORADIALIS",
+                    "coefficient": 0.85,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BICEPS_LONG",
+                    "coefficient": 0.65,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "calf-leg-press",
+            "name": "Подъём на носки в жиме ногами",
+            "description": "",
+            "technique": [],
+            "pattern": "CALF_RAISE",
+            "equipment": [
+                "MACHINE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 10,
+                "last": 20
+            },
+            "baseRestSeconds": 60,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "CALVES",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "calf-smith",
+            "name": "Подъём на носки в Смите",
+            "description": "",
+            "technique": [],
+            "pattern": "CALF_RAISE",
+            "equipment": [
+                "MACHINE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 10,
+                "last": 20
+            },
+            "baseRestSeconds": 60,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "CALVES",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "calf-barbell",
+            "name": "Подъём на носки со штангой",
+            "description": "",
+            "technique": [],
+            "pattern": "CALF_RAISE",
+            "equipment": [
+                "BARBELL"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 10,
+                "last": 20
+            },
+            "baseRestSeconds": 60,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "CALVES",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "calf-seated-barbell",
+            "name": "Подъём на носки сидя со штангой",
+            "description": "",
+            "technique": [],
+            "pattern": "CALF_RAISE",
+            "equipment": [
+                "BARBELL",
+                "BENCH"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 60,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "CALVES",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "calf-seated-db",
+            "name": "Подъём на носок сидя с гантелью",
+            "description": "",
+            "technique": [],
+            "pattern": "CALF_RAISE",
+            "equipment": [
+                "DUMBBELLS",
+                "BENCH"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": true,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 60,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "CALVES",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "calf-donkey",
+            "name": "Подъём на носки в наклоне в тренажёре",
+            "description": "",
+            "technique": [],
+            "pattern": "CALF_RAISE",
+            "equipment": [
+                "MACHINE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 10,
+                "last": 20
+            },
+            "baseRestSeconds": 60,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "CALVES",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "decline-bench",
+            "name": "Жим штанги на скамье с отрицательным наклоном",
+            "description": "",
+            "technique": [],
+            "pattern": "HORIZONTAL_PUSH",
+            "equipment": [
+                "BARBELL",
+                "BENCH"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 2,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 120,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "LOWER_CHEST",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "TRICEPS_LATERAL",
+                    "coefficient": 0.55,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "FRONT_DELTS",
+                    "coefficient": 0.45,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "decline-db-bench",
+            "name": "Жим гантелей с отрицательным наклоном",
+            "description": "",
+            "technique": [],
+            "pattern": "HORIZONTAL_PUSH",
+            "equipment": [
+                "DUMBBELLS",
+                "BENCH"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 120,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "LOWER_CHEST",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "TRICEPS_LATERAL",
+                    "coefficient": 0.45,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "FRONT_DELTS",
+                    "coefficient": 0.35,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "neutral-db-bench",
+            "name": "Жим гантелей нейтральным хватом",
+            "description": "",
+            "technique": [],
+            "pattern": "HORIZONTAL_PUSH",
+            "equipment": [
+                "DUMBBELLS",
+                "BENCH"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 120,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "MID_CHEST",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "TRICEPS_LATERAL",
+                    "coefficient": 0.45,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "FRONT_DELTS",
+                    "coefficient": 0.35,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "incline-db-fly",
+            "name": "Разведение гантелей на наклонной скамье",
+            "description": "",
+            "technique": [],
+            "pattern": "CHEST_FLY",
+            "equipment": [
+                "DUMBBELLS",
+                "BENCH"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "UPPER_CHEST",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "smith-bench",
+            "name": "Жим лёжа в Смите",
+            "description": "",
+            "technique": [],
+            "pattern": "HORIZONTAL_PUSH",
+            "equipment": [
+                "MACHINE",
+                "BENCH"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 2,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 120,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "MID_CHEST",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "TRICEPS_LATERAL",
+                    "coefficient": 0.55,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "FRONT_DELTS",
+                    "coefficient": 0.45,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "cable-chest-press",
+            "name": "Жим от груди на блоках стоя",
+            "description": "",
+            "technique": [],
+            "pattern": "HORIZONTAL_PUSH",
+            "equipment": [
+                "CABLE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 120,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "MID_CHEST",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "TRICEPS_LATERAL",
+                    "coefficient": 0.4,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "FRONT_DELTS",
+                    "coefficient": 0.3,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "arnold-press",
+            "name": "Жим Арнольда сидя",
+            "description": "",
+            "technique": [],
+            "pattern": "VERTICAL_PUSH",
+            "equipment": [
+                "DUMBBELLS",
+                "BENCH"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 120,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "FRONT_DELTS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "SIDE_DELTS",
+                    "coefficient": 0.55,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "TRICEPS_LONG",
+                    "coefficient": 0.5,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "barbell-shoulder-press",
+            "name": "Жим штанги стоя",
+            "description": "",
+            "technique": [],
+            "pattern": "VERTICAL_PUSH",
+            "equipment": [
+                "BARBELL"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 120,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "FRONT_DELTS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "SIDE_DELTS",
+                    "coefficient": 0.55,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "TRICEPS_LONG",
+                    "coefficient": 0.5,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "seated-db-press",
+            "name": "Жим гантелей сидя",
+            "description": "",
+            "technique": [],
+            "pattern": "VERTICAL_PUSH",
+            "equipment": [
+                "DUMBBELLS",
+                "BENCH"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 120,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "FRONT_DELTS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "SIDE_DELTS",
+                    "coefficient": 0.55,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "TRICEPS_LONG",
+                    "coefficient": 0.5,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "seated-lateral",
+            "name": "Разведение гантелей в стороны сидя",
+            "description": "",
+            "technique": [],
+            "pattern": "SHOULDER_ABDUCTION",
+            "equipment": [
+                "DUMBBELLS",
+                "BENCH"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 10,
+                "last": 20
+            },
+            "baseRestSeconds": 60,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "SIDE_DELTS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "cable-rear-fly",
+            "name": "Разведение рук на заднюю дельту в кроссовере",
+            "description": "",
+            "technique": [],
+            "pattern": "REAR_DELT",
+            "equipment": [
+                "CABLE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "REAR_DELTS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "UPPER_BACK",
+                    "coefficient": 0.4,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "seated-rear-fly",
+            "name": "Разведение гантелей в наклоне сидя",
+            "description": "",
+            "technique": [],
+            "pattern": "REAR_DELT",
+            "equipment": [
+                "DUMBBELLS",
+                "BENCH"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "REAR_DELTS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "UPPER_BACK",
+                    "coefficient": 0.4,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "reverse-grip-row",
+            "name": "Тяга штанги в наклоне обратным хватом",
+            "description": "",
+            "technique": [],
+            "pattern": "HORIZONTAL_PULL",
+            "equipment": [
+                "BARBELL"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 120,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "UPPER_BACK",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "LATS",
+                    "coefficient": 0.7,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BICEPS_SHORT",
+                    "coefficient": 0.4,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "two-db-row",
+            "name": "Тяга двух гантелей в наклоне",
+            "description": "",
+            "technique": [],
+            "pattern": "HORIZONTAL_PULL",
+            "equipment": [
+                "DUMBBELLS"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 120,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "UPPER_BACK",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "LATS",
+                    "coefficient": 0.7,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BICEPS_SHORT",
+                    "coefficient": 0.4,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "single-cable-row",
+            "name": "Тяга блока одной рукой сидя",
+            "description": "",
+            "technique": [],
+            "pattern": "HORIZONTAL_PULL",
+            "equipment": [
+                "CABLE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": true,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 120,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "UPPER_BACK",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "LATS",
+                    "coefficient": 0.65,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "REAR_DELTS",
+                    "coefficient": 0.4,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BICEPS_SHORT",
+                    "coefficient": 0.4,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "tbar-row",
+            "name": "Тяга Т-грифа с рукоятью",
+            "description": "",
+            "technique": [],
+            "pattern": "HORIZONTAL_PULL",
+            "equipment": [
+                "BARBELL"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 120,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "UPPER_BACK",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "LATS",
+                    "coefficient": 0.7,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BICEPS_SHORT",
+                    "coefficient": 0.4,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "smith-row",
+            "name": "Тяга в наклоне в Смите",
+            "description": "",
+            "technique": [],
+            "pattern": "HORIZONTAL_PULL",
+            "equipment": [
+                "MACHINE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 120,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "UPPER_BACK",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "LATS",
+                    "coefficient": 0.7,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BICEPS_SHORT",
+                    "coefficient": 0.4,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "lying-tbar-row",
+            "name": "Тяга Т-грифа с опорой грудью",
+            "description": "",
+            "technique": [],
+            "pattern": "HORIZONTAL_PULL",
+            "equipment": [
+                "MACHINE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 120,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "UPPER_BACK",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "LATS",
+                    "coefficient": 0.75,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "BICEPS_SHORT",
+                    "coefficient": 0.4,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "REAR_DELTS",
+                    "coefficient": 0.3,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "ez-skullcrusher",
+            "name": "Французский жим лёжа с EZ-грифом",
+            "description": "",
+            "technique": [],
+            "pattern": "ELBOW_EXTENSION",
+            "equipment": [
+                "EZ_BAR",
+                "BENCH"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "TRICEPS_LONG",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "TRICEPS_LATERAL",
+                    "coefficient": 0.6,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "single-cable-extension",
+            "name": "Разгибание одной руки на блоке",
+            "description": "",
+            "technique": [],
+            "pattern": "ELBOW_EXTENSION",
+            "equipment": [
+                "CABLE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": true,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 8,
+                "last": 15
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "TRICEPS_LATERAL",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "TRICEPS_MEDIAL",
+                    "coefficient": 0.7,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "reverse-pushdown",
+            "name": "Разгибание рук на блоке обратным хватом",
+            "description": "",
+            "technique": [],
+            "pattern": "ELBOW_EXTENSION",
+            "equipment": [
+                "CABLE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 8,
+                "last": 15
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "TRICEPS_LATERAL",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "TRICEPS_MEDIAL",
+                    "coefficient": 0.7,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "vbar-pushdown",
+            "name": "Разгибание рук с V-рукоятью",
+            "description": "",
+            "technique": [],
+            "pattern": "ELBOW_EXTENSION",
+            "equipment": [
+                "CABLE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 8,
+                "last": 15
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "TRICEPS_LATERAL",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "TRICEPS_MEDIAL",
+                    "coefficient": 0.7,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "db-kickback",
+            "name": "Разгибание руки с гантелью в наклоне",
+            "description": "",
+            "technique": [],
+            "pattern": "ELBOW_EXTENSION",
+            "equipment": [
+                "DUMBBELLS",
+                "BENCH"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": true,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "TRICEPS_LONG",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "SHORTENED",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "TRICEPS_LATERAL",
+                    "coefficient": 0.6,
+                    "role": "SECONDARY",
+                    "lengthBias": "SHORTENED",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "machine-triceps",
+            "name": "Разгибание рук в тренажёре",
+            "description": "",
+            "technique": [],
+            "pattern": "ELBOW_EXTENSION",
+            "equipment": [
+                "MACHINE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 8,
+                "last": 15
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "TRICEPS_LATERAL",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "TRICEPS_MEDIAL",
+                    "coefficient": 0.7,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "cable-lying-extension",
+            "name": "Разгибание рук лёжа на блоке",
+            "description": "",
+            "technique": [],
+            "pattern": "ELBOW_EXTENSION",
+            "equipment": [
+                "CABLE",
+                "BENCH"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "TRICEPS_LONG",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "TRICEPS_LATERAL",
+                    "coefficient": 0.6,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "front-squat",
+            "name": "Фронтальный присед со штангой",
+            "description": "",
+            "technique": [],
+            "pattern": "SQUAT",
+            "equipment": [
+                "BARBELL"
+            ],
+            "minimumLevel": "INTERMEDIATE",
+            "unilateral": false,
+            "setupComplexity": 3,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 150,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "QUADS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "GLUTE_MAX",
+                    "coefficient": 0.8,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "SPINAL_ERECTORS",
+                    "coefficient": 0.35,
+                    "role": "STABILIZER",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "smith-squat",
+            "name": "Присед в Смите",
+            "description": "",
+            "technique": [],
+            "pattern": "SQUAT",
+            "equipment": [
+                "MACHINE"
+            ],
+            "minimumLevel": "INTERMEDIATE",
+            "unilateral": false,
+            "setupComplexity": 3,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 150,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "QUADS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "GLUTE_MAX",
+                    "coefficient": 0.8,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "SPINAL_ERECTORS",
+                    "coefficient": 0.35,
+                    "role": "STABILIZER",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "db-squat",
+            "name": "Присед с гантелями по бокам",
+            "description": "",
+            "technique": [],
+            "pattern": "SQUAT",
+            "equipment": [
+                "DUMBBELLS"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 120,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "QUADS",
+                    "coefficient": 0.9,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "GLUTE_MAX",
+                    "coefficient": 0.65,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "ABS",
+                    "coefficient": 0.25,
+                    "role": "STABILIZER",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "db-step-up",
+            "name": "Зашагивание на скамью с гантелями",
+            "description": "",
+            "technique": [],
+            "pattern": "LUNGE",
+            "equipment": [
+                "DUMBBELLS",
+                "BENCH"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": true,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 8,
+                "last": 15
+            },
+            "baseRestSeconds": 120,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "QUADS",
+                    "coefficient": 0.8,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "GLUTE_MAX",
+                    "coefficient": 0.85,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "GLUTE_MED",
+                    "coefficient": 0.35,
+                    "role": "STABILIZER",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "barbell-lunge",
+            "name": "Выпады со штангой",
+            "description": "",
+            "technique": [],
+            "pattern": "LUNGE",
+            "equipment": [
+                "BARBELL"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": true,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 8,
+                "last": 15
+            },
+            "baseRestSeconds": 120,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "QUADS",
+                    "coefficient": 0.8,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "GLUTE_MAX",
+                    "coefficient": 0.85,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "GLUTE_MED",
+                    "coefficient": 0.35,
+                    "role": "STABILIZER",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "one-leg-extension",
+            "name": "Разгибание одной ноги в тренажёре",
+            "description": "",
+            "technique": [],
+            "pattern": "KNEE_EXTENSION",
+            "equipment": [
+                "MACHINE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": true,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 10,
+                "last": 20
+            },
+            "baseRestSeconds": 75,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "QUADS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "narrow-leg-press",
+            "name": "Жим ногами с узкой постановкой",
+            "description": "",
+            "technique": [],
+            "pattern": "SQUAT",
+            "equipment": [
+                "MACHINE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 120,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "QUADS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "GLUTE_MAX",
+                    "coefficient": 0.6,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "ab-machine",
+            "name": "Скручивания в тренажёре",
+            "description": "",
+            "technique": [],
+            "pattern": "CORE",
+            "equipment": [
+                "MACHINE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 10,
+                "last": 20
+            },
+            "baseRestSeconds": 60,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "ABS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "OBLIQUES",
+                    "coefficient": 0.25,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "hanging-leg-raise",
+            "name": "Подъём ног в висе",
+            "description": "",
+            "technique": [],
+            "pattern": "CORE",
+            "equipment": [
+                "BODYWEIGHT",
+                "PULL_UP_BAR"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 60,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "ABS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "bench-leg-raise",
+            "name": "Подъём ног лёжа на скамье",
+            "description": "",
+            "technique": [],
+            "pattern": "CORE",
+            "equipment": [
+                "BODYWEIGHT",
+                "BENCH"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 60,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "ABS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "decline-crunch",
+            "name": "Скручивания на наклонной скамье",
+            "description": "",
+            "technique": [],
+            "pattern": "CORE",
+            "equipment": [
+                "BODYWEIGHT",
+                "BENCH"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 60,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "ABS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "bicycle-crunch",
+            "name": "Скручивания велосипед",
+            "description": "",
+            "technique": [],
+            "pattern": "CORE",
+            "equipment": [
+                "BODYWEIGHT"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": false,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 60,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "ABS",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "db-side-bend",
+            "name": "Наклон в сторону с гантелью",
+            "description": "",
+            "technique": [],
+            "pattern": "CORE",
+            "equipment": [
+                "DUMBBELLS"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": true,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 60,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "OBLIQUES",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "ABS",
+                    "coefficient": 0.4,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        },
+        {
+            "id": "cable-woodchop",
+            "name": "Дровосек на верхнем блоке",
+            "description": "",
+            "technique": [],
+            "pattern": "CORE",
+            "equipment": [
+                "CABLE"
+            ],
+            "minimumLevel": "BEGINNER",
+            "unilateral": true,
+            "setupComplexity": 1,
+            "repRange": {
+                "first": 6,
+                "last": 12
+            },
+            "baseRestSeconds": 60,
+            "setDurationSeconds": 40,
+            "warnings": [],
+            "stimuli": [
+                {
+                    "region": "OBLIQUES",
+                    "coefficient": 1.0,
+                    "role": "PRIMARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "region": "ABS",
+                    "coefficient": 0.4,
+                    "role": "SECONDARY",
+                    "lengthBias": "MID_RANGE",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "catalogVersion": 3,
+            "reviewed": false
+        }
+    ],
+    "groups": {
+        "CHEST": "Грудь",
+        "BACK": "Спина",
+        "SHOULDERS": "Плечи",
+        "BICEPS": "Бицепс",
+        "TRICEPS": "Трицепс",
+        "QUADRICEPS": "Квадрицепс",
+        "HAMSTRINGS": "Задняя поверхность бедра",
+        "GLUTES": "Ягодицы",
+        "CALVES": "Икры",
+        "CORE": "Кор",
+        "FOREARMS": "Предплечья"
+    },
+    "equipment": {
+        "BODYWEIGHT": "Собственный вес",
+        "DUMBBELLS": "Гантели",
+        "BARBELL": "Штанга",
+        "BENCH": "Скамья",
+        "CABLE": "Блочный тренажёр",
+        "MACHINE": "Тренажёры",
+        "PULL_UP_BAR": "Турник",
+        "DIP_BARS": "Брусья",
+        "EZ_BAR": "EZ-гриф"
+    },
+    "regions": {
+        "UPPER_CHEST": {
+            "title": "Верх груди",
+            "group": "CHEST"
+        },
+        "MID_CHEST": {
+            "title": "Середина груди",
+            "group": "CHEST"
+        },
+        "LOWER_CHEST": {
+            "title": "Низ груди",
+            "group": "CHEST"
+        },
+        "LATS": {
+            "title": "Широчайшие",
+            "group": "BACK"
+        },
+        "UPPER_BACK": {
+            "title": "Верх спины",
+            "group": "BACK"
+        },
+        "SPINAL_ERECTORS": {
+            "title": "Разгибатели позвоночника",
+            "group": "BACK"
+        },
+        "FRONT_DELTS": {
+            "title": "Передняя дельта",
+            "group": "SHOULDERS"
+        },
+        "SIDE_DELTS": {
+            "title": "Средняя дельта",
+            "group": "SHOULDERS"
+        },
+        "REAR_DELTS": {
+            "title": "Задняя дельта",
+            "group": "SHOULDERS"
+        },
+        "BICEPS_LONG": {
+            "title": "Длинная головка бицепса",
+            "group": "BICEPS"
+        },
+        "BICEPS_SHORT": {
+            "title": "Короткая головка бицепса",
+            "group": "BICEPS"
+        },
+        "BRACHIALIS": {
+            "title": "Брахиалис",
+            "group": "BICEPS"
+        },
+        "TRICEPS_LONG": {
+            "title": "Длинная головка трицепса",
+            "group": "TRICEPS"
+        },
+        "TRICEPS_LATERAL": {
+            "title": "Латеральная головка трицепса",
+            "group": "TRICEPS"
+        },
+        "TRICEPS_MEDIAL": {
+            "title": "Медиальная головка трицепса",
+            "group": "TRICEPS"
+        },
+        "QUADS": {
+            "title": "Квадрицепс",
+            "group": "QUADRICEPS"
+        },
+        "HAMSTRINGS": {
+            "title": "Бицепс бедра",
+            "group": "HAMSTRINGS"
+        },
+        "GLUTE_MAX": {
+            "title": "Большая ягодичная",
+            "group": "GLUTES"
+        },
+        "GLUTE_MED": {
+            "title": "Средняя ягодичная",
+            "group": "GLUTES"
+        },
+        "CALVES": {
+            "title": "Икроножная и камбаловидная",
+            "group": "CALVES"
+        },
+        "ABS": {
+            "title": "Прямая мышца живота",
+            "group": "CORE"
+        },
+        "OBLIQUES": {
+            "title": "Косые мышцы",
+            "group": "CORE"
+        },
+        "BRACHIORADIALIS": {
+            "title": "Плечелучевая",
+            "group": "FOREARMS"
+        },
+        "WRIST_FLEXORS": {
+            "title": "Сгибатели кисти",
+            "group": "FOREARMS"
+        }
+    }
+}

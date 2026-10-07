@@ -1,0 +1,36 @@
+.gradle/
+.kotlin/
+.idea/
+local.properties
+**/build/
+*.iml
+captures/
+.DS_Store
+web/node_modules/
+web/dist/
+web/test-results/
+web/playwright-report/
+web/*.tsbuildinfo
+web/body-build-pwa.zip
+
+# Machine-specific settings, secrets and signing material
+.env
+.env.*
+!.env.example
+*.jks
+*.keystore
+*.p12
+*.pem
+*.key
+keystore.properties
+key.properties
+*.log
+*.hprof
+*.apk
+*.aab
+*.db
+*.db-shm
+*.db-wal
+
+# Local runtime data and backups
+body-build-backup*.json
