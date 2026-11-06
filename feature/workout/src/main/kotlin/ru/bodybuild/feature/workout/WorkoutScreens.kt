@@ -1,6 +1,9 @@
 package ru.bodybuild.feature.workout
 
 import androidx.compose.foundation.background
+import androidx.compose.animation.core.animateFloatAsState
+import androidx.compose.animation.core.tween
+import androidx.compose.ui.graphics.drawscope.clipRect
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -11,6 +14,9 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.platform.LocalHapticFeedback
+import androidx.compose.ui.hapticfeedback.HapticFeedbackType
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color
@@ -45,7 +51,10 @@ fun WorkoutScreen(
     onSkipRest: () -> Unit,
     onAddRest: (Int) -> Unit,
     onClose: () -> Unit,
+    onEditSet: suspend (CompletedSet, Int, Double) -> Boolean = { _, _, _ -> false },
 ) {
+    var editingSet by remember { mutableStateOf<CompletedSet?>(null) }
+    val haptics = LocalHapticFeedback.current
     var choosingExercise by rememberSaveable { mutableStateOf(false) }
     var confirmFinish by rememberSaveable { mutableStateOf(false) }
     var confirmCancel by remember { mutableStateOf(false) }
@@ -82,6 +91,7 @@ fun WorkoutScreen(
         }
     }) { padding ->
         LazyColumn(Modifier.fillMaxSize().padding(padding).padding(horizontal = 16.dp), verticalArrangement = Arrangement.spacedBy(14.dp)) {
+            item { SessionPulse(session) }
             item { WorkoutProgress(session, next) }
             if (session.isFinished) {
                 item {
@@ -96,7 +106,18 @@ fun WorkoutScreen(
                     Card(shape = BodyBuildShapes.card, colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer)) {
                         Column(Modifier.fillMaxWidth().padding(24.dp), verticalArrangement = Arrangement.spacedBy(14.dp)) {
                             Text("ОТДЫХ", style = MaterialTheme.typography.labelLarge)
-                            Text(formatTime(((session.restEndsAtEpochMillis ?: now) - now + 999) / 1000), style = MaterialTheme.typography.displaySmall)
+                            val remaining = ((session.restEndsAtEpochMillis ?: now) - now + 999) / 1000
+                            val restFraction by animateFloatAsState(
+                                (remaining.toFloat() / (next?.prescription?.restSeconds ?: 90).coerceAtLeast(1)).coerceIn(0f, 1f),
+                                tween(700), label = "rest timer")
+                            Box(Modifier.fillMaxWidth(), contentAlignment = Alignment.Center) {
+                                CircularProgressIndicator(progress = { restFraction }, modifier = Modifier.size(156.dp), strokeWidth = 7.dp,
+                                    trackColor = MaterialTheme.colorScheme.primary.copy(alpha = .12f))
+                                Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                                    Text("%02d:%02d".format(remaining / 60, remaining % 60), style = MaterialTheme.typography.displaySmall)
+                                    Text("до следующего подхода", style = MaterialTheme.typography.labelSmall)
+                                }
+                            }
                             Text(next?.let { "Дальше: ${it.prescription.exercise.name}" } ?: "Восстановитесь и выберите следующий подход")
                             Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                                 OutlinedButton(onClick = { onAddRest(30) }, modifier = Modifier.weight(1f)) { Text("+30 сек") }
@@ -126,7 +147,7 @@ fun WorkoutScreen(
                             OutlinedTextField(weight, { value -> weight = value.replace(',', '.').filter { it.isDigit() || it == '.' }.take(7) }, label = { Text("Вес, кг") }, keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal), singleLine = true, modifier = Modifier.fillMaxWidth())
                         }
                         Button(
-                            onClick = { onCompleteSet(reps.toInt(), weight.toDoubleOrNull() ?: 0.0) },
+                            onClick = { haptics.performHapticFeedback(HapticFeedbackType.Confirm); onCompleteSet(reps.toInt(), weight.toDoubleOrNull() ?: 0.0) },
                             enabled = (reps.toIntOrNull() ?: 0) > 0 && (weight.isBlank() || (weight.toDoubleOrNull()?.let { it >= 0 } == true)),
                             modifier = Modifier.fillMaxWidth().height(54.dp),
                         ) { Text(if (session.mode == WorkoutMode.PLANNED && session.completedSets.size + 1 >= session.actionableSets) "Завершить тренировку" else "Подход выполнен") }
@@ -147,15 +168,15 @@ fun WorkoutScreen(
                     }
                 }
             }
-            if (session.mode == WorkoutMode.FREE && session.completedSets.isNotEmpty()) item {
-                Text("Уже записано", style = MaterialTheme.typography.titleMedium)
-                session.completedSets.groupBy { it.exerciseId }.forEach { (_, sets) ->
-                    Text("${sets.first().exerciseName} · ${sets.size} подходов", modifier = Modifier.padding(vertical = 4.dp))
-                }
+            if (session.completedSets.isNotEmpty()) item {
+                Text("Дневник подходов", style = MaterialTheme.typography.titleLarge)
+                Text("Каждый результат сохранён. Нажмите «Изменить», чтобы исправить запись.", modifier = Modifier.padding(vertical = 8.dp), style = MaterialTheme.typography.bodySmall)
+                SetJournal(session) { editingSet = it }
             }
             item { Spacer(Modifier.height(20.dp)) }
         }
     }
+    editingSet?.let { set -> EditSetDialog(set, { editingSet = null }) { reps, kg -> onEditSet(set, reps, kg) } }
     if (choosingExercise) ExercisePicker(catalog, onDismiss = { choosingExercise = false }) {
         onAddExercise(it); choosingExercise = false
     }
@@ -183,6 +204,7 @@ fun WorkoutScreen(
 @Composable
 private fun WorkoutProgress(session: WorkoutSession, next: PlannedSet?) {
     val progress = if (session.actionableSets == 0) if (session.isFinished) 1f else 0f else session.completedSets.size.toFloat() / session.actionableSets
+    val animatedProgress by animateFloatAsState(progress.coerceIn(0f, 1f), tween(500), label = "workout progress")
     val currentGroups = next?.takeUnless { session.isFinished }?.prescription?.exercise?.stimuli?.filter { it.role != StimulusRole.STABILIZER && it.coefficient >= .3 }?.map { it.region.group }?.toSet().orEmpty()
     val remainingExercises = session.day.exercises.mapIndexedNotNull { index, p -> p.takeIf { index !in session.skippedExerciseIndices && index >= (next?.exerciseIndex ?: session.day.exercises.size) } }
     val remainingGroups = remainingExercises.flatMap { p -> p.exercise.stimuli.filter { it.role != StimulusRole.STABILIZER && it.coefficient >= .3 }.map { it.region.group } }.toSet()
@@ -191,7 +213,7 @@ private fun WorkoutProgress(session: WorkoutSession, next: PlannedSet?) {
     val allGroups = session.day.exercises.flatMap { it.exercise.stimuli.filter { s -> s.role != StimulusRole.STABILIZER && s.coefficient >= .3 }.map { s -> s.region.group } }.distinct()
     Card(shape = BodyBuildShapes.card) { Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
         Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) { Text(if (session.mode == WorkoutMode.FREE) "Нагрузка сейчас" else "Прогресс", fontWeight = FontWeight.Bold); Text(if (session.mode == WorkoutMode.FREE) "${session.completedSets.size} подходов" else "${session.completedSets.size} / ${session.actionableSets} подходов") }
-        if (session.mode == WorkoutMode.PLANNED) LinearProgressIndicator(progress = { progress }, modifier = Modifier.fillMaxWidth().height(8.dp).clip(MaterialTheme.shapes.small))
+        if (session.mode == WorkoutMode.PLANNED) LinearProgressIndicator(progress = { animatedProgress }, modifier = Modifier.fillMaxWidth().height(10.dp).clip(MaterialTheme.shapes.small))
         FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
             allGroups.forEach { group ->
                 val (label, color) = when {
@@ -219,7 +241,9 @@ fun ProfileScreen(
     onDeleteWorkout: (String) -> Unit,
     onUpdateProfile: (UserProfile) -> Unit,
     onBack: () -> Unit,
+    onEditSet: suspend (String, CompletedSet, Int, Double) -> Boolean = { _, _, _, _ -> false },
 ) {
+    var editingSet by remember { mutableStateOf<Pair<String, CompletedSet>?>(null) }
     var tab by rememberSaveable { mutableIntStateOf(0) }
     var expandedSessionId by rememberSaveable { mutableStateOf<String?>(null) }
     var planToDelete by remember { mutableStateOf<WeeklyPlan?>(null) }
@@ -286,10 +310,12 @@ fun ProfileScreen(
                         WorkoutHistoryCard(session, session.id in selectedIds, expandedSessionId == session.id,
                             onSelect = { selectedIds = if (session.id in selectedIds) selectedIds - session.id else selectedIds + session.id },
                             onExpand = { expandedSessionId = if (expandedSessionId == session.id) null else session.id },
-                            onDelete = { workoutToDelete = session })
+                            onDelete = { workoutToDelete = session },
+                            onEdit = { editingSet = session.id to it })
                     }
                 }
                 1 -> {
+                    item { VolumeTrend(orderedHistory) }
                     item { Text("Вес и повторения объединены в условный силовой индекс лучшего подхода. Нажмите на упражнение, чтобы увидеть график.", style = MaterialTheme.typography.bodyMedium) }
                     item {
                         FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
@@ -319,11 +345,16 @@ fun ProfileScreen(
             item { Spacer(Modifier.height(24.dp)) }
         }
     }
+    editingSet?.let { (id, set) -> EditSetDialog(set, { editingSet = null }) { reps, kg -> onEditSet(id, set, reps, kg) } }
     if (editMeasurements) MeasurementsDialog(profile, { editMeasurements = false }) { onUpdateProfile(it); editMeasurements = false }
     if (showAnalysis) LoadAnalysisDialog(selected) { showAnalysis = false }
     planToDelete?.let { plan -> ConfirmDelete("Удалить программу?", "Программа «${plan.title}» будет удалена. Записи выполненных тренировок останутся.", { planToDelete = null }, { planToDelete = null; onDeletePlan(plan.id) }) }
     workoutToDelete?.let { workout -> ConfirmDelete("Удалить тренировку?", "Записи подходов, время и тоннаж этой тренировки будут удалены из статистики.", { workoutToDelete = null }, { workoutToDelete = null; onDeleteWorkout(workout.id) }) }
-    selectedProgression?.let { item -> ProgressionDialog(item, progressPeriod) { selectedProgression = null } }
+    selectedProgression?.let { selectedItem ->
+        progression(history, progressPeriod).firstOrNull { it.exerciseId == selectedItem.exerciseId }?.let { item ->
+            ProgressionDialog(item, progressPeriod) { selectedProgression = null }
+        }
+    }
 }
 internal enum class ProgressPeriod(val title: String, val durationMillis: Long?) {
     LAST("Последняя", null), WEEK("Неделя", 7L * 24 * 60 * 60 * 1_000), MONTH("Месяц", 30L * 24 * 60 * 60 * 1_000),
@@ -385,6 +416,9 @@ private fun ProgressionDialog(item: ProgressionItem, period: ProgressPeriod, onD
 
 @Composable
 private fun ProgressChart(points: List<ProgressPoint>) {
+    var entered by remember(points) { mutableStateOf(false) }
+    LaunchedEffect(points) { entered = true }
+    val reveal by animateFloatAsState(if (entered) 1f else 0f, tween(700), label = "chart reveal")
     val primary = MaterialTheme.colorScheme.primary
     val grid = MaterialTheme.colorScheme.outlineVariant
     val surface = MaterialTheme.colorScheme.surfaceVariant
@@ -410,8 +444,11 @@ private fun ProgressChart(points: List<ProgressPoint>) {
             points.forEachIndexed { index, point -> if (index == 0) linePath.moveTo(x(point, index), y(point)) else linePath.lineTo(x(point, index), y(point)) }
             if (points.size > 1) {
                 val fillPath = Path().apply { addPath(linePath); lineTo(size.width, size.height); lineTo(0f, size.height); close() }
-                drawPath(fillPath, Brush.verticalGradient(listOf(primary.copy(alpha = .28f), Color.Transparent)))
-                drawPath(linePath, primary, style = Stroke(width = 3.dp.toPx()))
+                clipRect(right = size.width * reveal) {
+                    drawPath(fillPath, Brush.verticalGradient(listOf(primary.copy(alpha = .28f), Color.Transparent)))
+                    drawPath(linePath, primary.copy(alpha = .12f), style = Stroke(width = 10.dp.toPx()))
+                    drawPath(linePath, primary, style = Stroke(width = 3.dp.toPx()))
+                }
             }
             points.forEachIndexed { index, point ->
                 drawCircle(primary, 6.dp.toPx(), Offset(x(point, index), y(point)))

@@ -1,5 +1,18 @@
 package ru.bodybuild.core.model
 
+/** Edit only an existing record. Keep identity, timestamps, rest and completion intact. */
+fun WorkoutSession.editCompletedSet(original: CompletedSet, repetitions: Int, weightKg: Double): WorkoutSession {
+    require(repetitions in 1..999) { "Укажите от 1 до 999 повторений" }
+    require(weightKg.isFinite() && weightKg in (if (original.bodyweight) 25.0..350.0 else 0.0..2000.0)) {
+        if (original.bodyweight) "Вес тела должен быть от 25 до 350 кг" else "Вес должен быть от 0 до 2000 кг"
+    }
+    val index = completedSets.indexOfFirst { it.exerciseIndex == original.exerciseIndex && it.setNumber == original.setNumber }
+    require(index >= 0 && completedSets[index] == original) { "Подход уже изменён. Закройте редактор и откройте его снова." }
+    val replacement = if (original.bodyweight) original.copy(repetitions = repetitions, userBodyWeightKg = weightKg)
+        else original.copy(repetitions = repetitions, weightKg = weightKg)
+    return copy(completedSets = completedSets.mapIndexed { i, set -> if (i == index) replacement else set })
+}
+
 /** Session transitions are shared by UI modes and independently testable. */
 fun WorkoutSession.addFreeExercise(exercise: Exercise): WorkoutSession {
     if (mode != WorkoutMode.FREE || isFinished || nextSet() != null) return this

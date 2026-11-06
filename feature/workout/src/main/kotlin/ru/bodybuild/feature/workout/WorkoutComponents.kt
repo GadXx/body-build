@@ -1,6 +1,7 @@
 package ru.bodybuild.feature.workout
 
 import androidx.compose.foundation.layout.*
+import androidx.compose.animation.animateContentSize
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
@@ -76,8 +77,8 @@ internal fun EmptyHistoryCard() {
 }
 
 @Composable
-internal fun WorkoutHistoryCard(session: WorkoutSession, selected: Boolean, expanded: Boolean, onSelect: () -> Unit, onExpand: () -> Unit, onDelete: () -> Unit) {
-    Card(Modifier.fillMaxWidth(), colors = CardDefaults.cardColors(containerColor = if (selected) MaterialTheme.colorScheme.secondaryContainer else MaterialTheme.colorScheme.surfaceContainer)) {
+internal fun WorkoutHistoryCard(session: WorkoutSession, selected: Boolean, expanded: Boolean, onSelect: () -> Unit, onExpand: () -> Unit, onDelete: () -> Unit, onEdit: (CompletedSet) -> Unit) {
+    Card(Modifier.fillMaxWidth().animateContentSize(), shape = MaterialTheme.shapes.extraLarge, colors = CardDefaults.cardColors(containerColor = if (selected) MaterialTheme.colorScheme.secondaryContainer else MaterialTheme.colorScheme.surfaceContainer)) {
         Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
             Row(Modifier.fillMaxWidth().toggleable(selected, role = Role.Checkbox, onValueChange = { onSelect() }), verticalAlignment = Alignment.CenterVertically) {
                 Checkbox(checked = selected, onCheckedChange = null)
@@ -91,14 +92,9 @@ internal fun WorkoutHistoryCard(session: WorkoutSession, selected: Boolean, expa
             Text("${minutes} мин · ${session.completedSets.size} подходов · ${session.completedSets.map { it.exerciseId }.distinct().size} упражнений", style = MaterialTheme.typography.bodyMedium)
             Text("${String.format(Locale.forLanguageTag("ru"), "%.0f", session.completedSets.sumOf(CompletedSet::tonnageKg))} кг тоннажа", style = MaterialTheme.typography.titleMedium, color = MaterialTheme.colorScheme.primary)
             Text(session.completedSets.distinctBy { it.exerciseId }.joinToString(" · ") { it.exerciseName }, maxLines = if (expanded) Int.MAX_VALUE else 2, style = MaterialTheme.typography.bodySmall)
-            TextButton(onClick = onExpand) { Text(if (expanded) "Свернуть" else "Упражнения и подходы ↓") }
+            FilledTonalButton(onClick = onExpand, modifier = Modifier.fillMaxWidth()) { Text(if (expanded) "Свернуть" else "Упражнения и подходы ↓") }
             if (expanded) {
-                session.completedSets.groupBy { it.exerciseId }.values.forEach { sets ->
-                    Text(sets.first().exerciseName, style = MaterialTheme.typography.titleSmall)
-                    sets.forEachIndexed { index, set ->
-                        Text("${index + 1}. ${set.repetitions} повт. × ${set.effectiveWeightKg()} кг${if (set.bodyweight) " · вес тела" else ""}", style = MaterialTheme.typography.bodySmall)
-                    }
-                }
+                SetJournal(session, onEdit)
                 if (session.skippedExerciseIndices.isNotEmpty()) Text("Пропущено упражнений: ${session.skippedExerciseIndices.size}. Невыполненные подходы не учтены.", style = MaterialTheme.typography.bodySmall)
                 TextButton(onClick = onDelete) { Text("Удалить тренировку", color = MaterialTheme.colorScheme.error) }
             }

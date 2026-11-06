@@ -49,4 +49,18 @@ class ProgressionTest {
         assertEquals(160.0, item.current, .001)
         assertEquals(1200.0, free.completedSets.sumOf(CompletedSet::tonnageKg))
     }
+
+    @Test fun `editing old or latest record recalculates graph and comparison`() {
+        val now = 100 * dayMillis
+        val old = workout("old", now - dayMillis, 100.0)
+        val latest = workout("new", now, 120.0)
+        val correctedOld = old.editCompletedSet(old.completedSets.single(), 6, 90.0)
+        val correctedLatest = latest.editCompletedSet(latest.completedSets.single(), 12, 110.0)
+        val item = progression(listOf(correctedLatest, correctedOld), ProgressPeriod.LAST, now).single()
+        assertEquals(108.0, item.previous!!, .001)
+        assertEquals(154.0, item.current, .001)
+        assertEquals(12, item.points.last().repetitions)
+        assertEquals(110.0, item.points.last().weightKg)
+        assertEquals(old.startedAtEpochMillis, item.points.first().timestamp)
+    }
 }

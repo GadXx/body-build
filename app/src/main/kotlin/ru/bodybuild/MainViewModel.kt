@@ -190,6 +190,24 @@ class MainViewModel @Inject constructor(
     }
 
     fun skipRest() = changeRest(null)
+    suspend fun editRecordedSet(sessionId: String, original: CompletedSet, repetitions: Int, weightKg: Double): Boolean =
+        workoutMutex.withLock {
+            runCatching {
+                val current = _state.value
+                val session = current.activeWorkout?.takeIf { it.id == sessionId }
+                    ?: current.workoutHistory.firstOrNull { it.id == sessionId }
+                    ?: error("Тренировка больше не найдена")
+                val updated = session.editCompletedSet(original, repetitions, weightKg)
+                workoutRepository.save(updated)
+                _state.update { state -> state.copy(
+                    activeWorkout = if (state.activeWorkout?.id == sessionId) updated else state.activeWorkout,
+                    workoutHistory = state.workoutHistory.map { if (it.id == sessionId) updated else it },
+                    error = null,
+                ) }
+            }.fold(onSuccess = { true }, onFailure = { error ->
+                _state.update { it.copy(error = error.message ?: "Не удалось сохранить подход") }; false
+            })
+        }
     fun addRest(seconds: Int) = changeRest((_state.value.activeWorkout?.restEndsAtEpochMillis ?: System.currentTimeMillis()) + seconds * 1_000L)
 
     private fun changeRest(until: Long?) {
@@ -211,10 +229,13 @@ class MainViewModel @Inject constructor(
     }
 
     fun deleteWorkout(id: String) {
-        viewModelScope.launch {
-            workoutRepository.delete(id)
-            _state.update { it.copy(workoutHistory = workoutRepository.getHistory()) }
-        }
+        viewModelScope.launch { workoutMutex.withLock {
+            runCatching {
+                workoutRepository.delete(id)
+                val history = workoutRepository.getHistory()
+                _state.update { it.copy(workoutHistory = history, activeWorkout = it.activeWorkout?.takeUnless { session -> session.id == id }) }
+            }.onFailure { error -> _state.update { it.copy(error = error.message ?: "Не удалось удалить тренировку") } }
+        } }
     }
 
     fun deletePlan(id: String) {

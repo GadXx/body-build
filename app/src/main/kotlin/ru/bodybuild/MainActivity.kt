@@ -116,6 +116,7 @@ private fun BodyBuildApp(viewModel: MainViewModel = hiltViewModel()) {
                     onSkipRest = viewModel::skipRest,
                     onAddRest = viewModel::addRest,
                     onClose = home,
+                    onEditSet = { set, reps, weight -> viewModel.editRecordedSet(session.id, set, reps, weight) },
                 )
             } ?: LaunchedEffect(Unit) { navController.popBackStack() }
         }
@@ -129,6 +130,7 @@ private fun BodyBuildApp(viewModel: MainViewModel = hiltViewModel()) {
                 onDeletePlan = viewModel::deletePlan,
                 onDeleteWorkout = viewModel::deleteWorkout,
                 onUpdateProfile = viewModel::updateProfile,
+                onEditSet = viewModel::editRecordedSet,
                 onBack = home,
             )
         }
