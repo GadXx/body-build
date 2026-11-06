@@ -96,4 +96,14 @@ class FreeWorkoutUiTest {
             assertEquals(true, session.isFinished)
         }
     }
+
+    @Test fun profileRecordsOpenOriginalWorkout() {
+        val active = empty().addFreeExercise(exercise)
+        val done = active.recordSet(active.nextSet()!!, 10, 20.0, 75.0, System.currentTimeMillis()).finishFreeWorkout(System.currentTimeMillis())
+        compose.setContent { BodyBuildTheme { ProfileScreen(UserProfile(), emptyList(), null, listOf(done), {}, {}, {}, {}, {}) } }
+        compose.onNodeWithText("Рекорды").performScrollTo().performClick()
+        compose.onNodeWithText("Максимальный вес").performScrollTo().assertIsDisplayed()
+        compose.onAllNodesWithText("К тренировке →", substring = true).onFirst().performScrollTo().performClick()
+        compose.onNodeWithText("10 повт. × 20 кг").performScrollTo().assertIsDisplayed()
+    }
 }

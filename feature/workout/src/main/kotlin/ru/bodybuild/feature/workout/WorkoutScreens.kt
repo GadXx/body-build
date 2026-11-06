@@ -8,6 +8,7 @@ import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.*
@@ -246,6 +247,9 @@ fun ProfileScreen(
     var editingSet by remember { mutableStateOf<Pair<String, CompletedSet>?>(null) }
     var tab by rememberSaveable { mutableIntStateOf(0) }
     var expandedSessionId by rememberSaveable { mutableStateOf<String?>(null) }
+    var recordSessionTarget by rememberSaveable { mutableStateOf<String?>(null) }
+    var recordQuery by rememberSaveable { mutableStateOf("") }
+    val profileListState = rememberLazyListState()
     var planToDelete by remember { mutableStateOf<WeeklyPlan?>(null) }
     var workoutToDelete by remember { mutableStateOf<WorkoutSession?>(null) }
     var progressPeriod by remember { mutableStateOf(ProgressPeriod.LAST) }
@@ -255,6 +259,15 @@ fun ProfileScreen(
     var editMeasurements by rememberSaveable { mutableStateOf(false) }
     val selected = history.filter { it.id in selectedIds }
     val orderedHistory = remember(history) { history.sortedByDescending { it.startedAtEpochMillis } }
+    val records = remember(history) { exerciseRecords(history) }
+    LaunchedEffect(tab, recordSessionTarget) {
+        val id = recordSessionTarget
+        if (tab == 0 && id != null) {
+            val index = orderedHistory.indexOfFirst { it.id == id }
+            if (index >= 0) profileListState.scrollToItem(6 + index)
+            recordSessionTarget = null
+        }
+    }
     LaunchedEffect(history) { selectedIds = selectedIds.filter { id -> history.any { it.id == id } } }
     Scaffold(
         topBar = { Row(Modifier.fillMaxWidth().statusBarsPadding().padding(16.dp), horizontalArrangement = Arrangement.SpaceBetween) {
@@ -270,7 +283,7 @@ fun ProfileScreen(
             }
         },
     ) { padding ->
-        LazyColumn(Modifier.fillMaxSize().padding(padding).padding(horizontal = 16.dp), verticalArrangement = Arrangement.spacedBy(14.dp)) {
+        LazyColumn(Modifier.fillMaxSize().padding(padding).padding(horizontal = 16.dp), state = profileListState, verticalArrangement = Arrangement.spacedBy(14.dp)) {
             item {
                 Card(Modifier.fillMaxWidth(), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer), shape = BodyBuildShapes.card) {
                     Row(Modifier.fillMaxWidth().padding(20.dp), horizontalArrangement = Arrangement.SpaceBetween) {
@@ -290,14 +303,27 @@ fun ProfileScreen(
                 }
             }
             item {
-                PrimaryTabRow(selectedTabIndex = tab) {
-                    listOf("История", "Прогресс", "Программы").forEachIndexed { index, label ->
+                PrimaryScrollableTabRow(selectedTabIndex = tab, edgePadding = 0.dp) {
+                    listOf("История", "Прогресс", "Программы", "Рекорды").forEachIndexed { index, label ->
                         Tab(selected = tab == index, onClick = { tab = index }, text = { Text(label) })
                     }
                 }
             }
             item { Text("Всего времени: ${formatTime(history.sumOf { it.elapsedSeconds })} · в тоннаж включён вес тела для соответствующих упражнений", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant) }
             when (tab) {
+                3 -> {
+                    item {
+                        Text("Ваши лучшие результаты", style = MaterialTheme.typography.headlineSmall)
+                        Text("За всё время · только завершённые тренировки. Повторы сравниваются независимо от веса. Силовой индекс — условная оценка, не измеренный максимум.", style = MaterialTheme.typography.bodySmall, modifier = Modifier.padding(vertical = 8.dp))
+                        OutlinedTextField(recordQuery, { recordQuery = it }, label = { Text("Поиск рекордов") }, singleLine = true, modifier = Modifier.fillMaxWidth())
+                    }
+                    val filtered = records.filter { it.name.contains(recordQuery.trim(), ignoreCase = true) }
+                    if (records.isEmpty()) item { Text("Завершите первую тренировку — рекорды выполненных упражнений появятся здесь.") }
+                    else if (filtered.isEmpty()) item { Text("Упражнение не найдено. Попробуйте другое название.") }
+                    items(filtered, key = { "record-${it.exerciseId}" }) { record ->
+                        RecordCard(record) { id -> expandedSessionId = id; recordSessionTarget = id; tab = 0 }
+                    }
+                }
                 0 -> {
                     item { Text("Отметьте занятия галочками, чтобы сравнить нагрузку на мышцы за выбранные тренировки.", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant) }
                     if (history.isEmpty()) item { EmptyHistoryCard() }
